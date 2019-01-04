@@ -11,7 +11,7 @@ add events and define epochs to the NeoAll instance.
 from neoStructures import *
 import pandas as pd
 import matplotlib.pyplot as plt
-from os.path import isdir, join
+from os.path import isdir, join, isfile
 import seaborn as sns
 import pickle
 sns.set()
@@ -21,6 +21,8 @@ sns.set_context('paper')
 # In this example we will load the NeoAll instance from a pickle file
 data_dir = join('pySpikeAnalysis', 'sample_data') if isdir('pySpikeAnalysis') else join('..', '..', 'pySpikeAnalysis', 'sample_data')
 neo_all_filename = r'neoall_071118_1132.p'
+if not isfile(join(data_dir, neo_all_filename)):
+    raise ValueError('Cannot find the file {}'.format(join(data_dir, neo_all_filename)))
 with open(join(data_dir, neo_all_filename), 'rb') as f:
     neoAll = pickle.load(f)
 
