@@ -10,3 +10,4 @@ elephant
 tqdm
 sphinx_bootstrap_theme
 numpydoc
+sphinx_gallery
