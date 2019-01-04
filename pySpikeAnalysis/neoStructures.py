@@ -6,6 +6,7 @@ import h5py
 import numpy as np
 import neo
 from quantities import Hz, s, ms
+import quantities
 import os
 from datetime import datetime
 import csv
@@ -513,10 +514,10 @@ class NeoAll(NeoMother):
             event_pos, = np.where(event_names_seg == event_name)
             event_times = seg.events[int(event_pos)].times
             for i_epoch in range(0, n_epochs):
-                time_offset_i = time_offset[i_epoch]
-                # time_offset_i = time_offset_i*s if isinstance(time_offset_i, Number) else time_offset_i
+                time_offset_i = time_offset[i_epoch]*s
+                time_offset_i = time_offset_i if isinstance(time_offset_i, quantities.quantity.Quantity) else time_offset_i*s
                 epoch_duration_i = epoch_duration[i_epoch]
-                # epoch_duration_i = epoch_duration_i*s if isinstance(epoch_duration_i, Number) else epoch_duration_i
+                epoch_duration_i = epoch_duration_i if isinstance(epoch_duration_i, quantities.quantity.Quantity) else epoch_duration_i*s
                 epoch_i = neo.Epoch(times=event_times + time_offset_i, durations=epoch_duration_i,
                                     name=epoch_names[i_epoch])
                 self.segments[i_seg].epochs.append(epoch_i)

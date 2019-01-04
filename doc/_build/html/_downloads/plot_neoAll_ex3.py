@@ -17,10 +17,12 @@ from os.path import isdir, join
 
 #######################
 # Import the data and create the NeoAll instance
-data_dir = join('pySpikeAnalysis', 'sample_data') if isdir('pySpikeAnalysis') else join('..', '..', 'pySpikeAnalysis', 'sample_data_whole')
+data_dir = join('pySpikeAnalysis', 'sample_data') if isdir('pySpikeAnalysis') else join('..', '..', 'pySpikeAnalysis', 'sample_data')
+data_dir_sig = join('pySpikeAnalysis', 'sample_data') if isdir('pySpikeAnalysis') else join('..', '..', 'pySpikeAnalysis', 'sample_data_whole')
 spykingcircus_dir = r'SpykingCircus_results'
 probe_filename = r'000_AA.prb'
-signal_dir = join(data_dir, r'EDF')
+# signal_dir = join(data_dir_sig, r'EDF')
+signal_dir = ''
 results_filename = r'spykingcircusres'
 artefact_csv_filepath = join(data_dir, r'artefact_free_periods.csv')
 
@@ -44,21 +46,26 @@ print(df.head())
 ###############################
 # the method :func:`neoStructure.NeoAll.plot_raw_unit_shape` allows to have access to the raw (unfiltered)
 # spike trace and to investigate the effects of filtering on the unit shape.
-neoAll.plot_raw_unit_shape(34, signal_dir, artefact_csv_filepath, fn_hz=[300, 3000], plot_density_plot=False)
+
+# neoAll.plot_raw_unit_shape(34, signal_dir, artefact_csv_filepath, fn_hz=[300, 3000], plot_density_plot=False)
 
 ################################
 # Density plot can be shown :
-neoAll.plot_raw_unit_shape(34, signal_dir, artefact_csv_filepath, fn_hz=[300, 3000], plot_mean_shape=False)
+
+# neoAll.plot_raw_unit_shape(34, signal_dir, artefact_csv_filepath, fn_hz=[300, 3000], plot_mean_shape=False)
 
 #############################
 # It is possible to re-align the spike traces based on the extrema by setting realign to True
-neoAll.plot_raw_unit_shape(34, signal_dir, artefact_csv_filepath, fn_hz=[300, 3000], realign=True, plot_density_plot=False)
+
+# neoAll.plot_raw_unit_shape(34, signal_dir, artefact_csv_filepath, fn_hz=[300, 3000], realign=True, plot_density_plot=False)
 
 ############################
 # Realigned density plot :
-neoAll.plot_raw_unit_shape(34, signal_dir, artefact_csv_filepath, fn_hz=[300, 3000], realign=True, plot_mean_shape=False)
+
+# neoAll.plot_raw_unit_shape(34, signal_dir, artefact_csv_filepath, fn_hz=[300, 3000], realign=True, plot_mean_shape=False)
 
 #############################
 # Comparison can be made with the shape obtained from Spyking-Circus results :
-neoAll.plot_unit_shape(34)
+
+# neoAll.plot_unit_shape(34)
 

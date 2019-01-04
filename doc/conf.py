@@ -19,7 +19,7 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('..'))
+sys.path.insert(0, os.path.join(os.path.abspath('..'),'pySpikeAnalysis'))
 import sphinx_bootstrap_theme
 from numpydoc import numpydoc, docscrape # noqa
 

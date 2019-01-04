@@ -37,7 +37,6 @@ First import the neoStructures :
 
 .. code-block:: python
 
-
     from neoStructures import *
     import matplotlib.pyplot as plt
     from os.path import isdir, join
@@ -57,7 +56,6 @@ Import the data and create the NeoAll instance
     data_dir = join('pySpikeAnalysis', 'sample_data') if isdir('pySpikeAnalysis') else join('..', '..', 'pySpikeAnalysis', 'sample_data')
     spykingcircus_dir = r'SpykingCircus_results'
     probe_filename = r'000_AA.prb'
-    signal_dir = r'EDF'
     results_filename = r'spykingcircusres'
 
     neoAll = NeoAll(join(data_dir, spykingcircus_dir), results_filename, join(data_dir, probe_filename), save_fig=0)
@@ -198,7 +196,7 @@ Zoom on the x-origin and increase the number of bins for the histogram
 
 
 
-**Total running time of the script:** ( 0 minutes  1.025 seconds)
+**Total running time of the script:** ( 0 minutes  1.526 seconds)
 
 
 

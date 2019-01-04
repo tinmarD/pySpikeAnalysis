@@ -4,7 +4,7 @@
 
 
 ======================================================
-    Neo All - example 5 - Channel Groups (Index)
+    Neo All - example 5 - Channel Groups / Index
 ======================================================
 
 This example show how to use the channel indexes in the NeoAll class. In NeoAll, channel indexes are defined for each
@@ -34,29 +34,18 @@ Import the data and create the NeoAll instance
 
 .. code-block:: python
 
-    data_dir = join('pySpikeAnalysis', 'sample_data') if isdir('pySpikeAnalysis') else join('..', '..', 'pySpikeAnalysis', 'sample_data_whole')
+    data_dir = join('pySpikeAnalysis', 'sample_data') if isdir('pySpikeAnalysis') else join('..', '..', 'pySpikeAnalysis', 'sample_data')
     spykingcircus_dir = r'SpykingCircus_results'
     probe_filename = r'000_AA.prb'
-    signal_dir = join(data_dir, r'EDF')
     results_filename = r'spykingcircusres'
     artefact_csv_filepath = join(data_dir, r'artefact_free_periods.csv')
 
-    neoAll = NeoAll(join(data_dir, spykingcircus_dir), results_filename, join(data_dir, probe_filename),
-                    signal_dirpath=signal_dir, save_fig=0)
+    neoAll = NeoAll(join(data_dir, spykingcircus_dir), results_filename, join(data_dir, probe_filename), save_fig=0)
 
 
 
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out::
-
-    Extracting edf Parameters from ..\..\pySpikeAnalysis\sample_data_whole\EDF\micro_30kHz.edf...
-    EDF file detected
-    Setting channel info structure...
-    Created Raw.info structure...
-    Ready.
 
 
 See information about NeoAll
@@ -76,8 +65,7 @@ See information about NeoAll
  Out::
 
     NeoAll Instance with 54 units. 1 Neo segment per unit. Each segment contains 1 Neo spiketrain
-    14 channel indexes
-    37 channels and 37 electrodes
+    10 channel indexes
 
 
 Let's look at the different channel indexes :
@@ -86,7 +74,7 @@ Let's look at the different channel indexes :
 
 .. code-block:: python
 
-    print(neoAll.channel_indexes[0])
+    print(neoAll.channel_indexes)
 
 
 
@@ -97,7 +85,7 @@ Let's look at the different channel indexes :
 
  Out::
 
-    <neo.core.channelindex.ChannelIndex object at 0x000000000C484CF8>
+    [<neo.core.channelindex.ChannelIndex object at 0x000000000D7DADD8>, <neo.core.channelindex.ChannelIndex object at 0x000000000D7DAC88>, <neo.core.channelindex.ChannelIndex object at 0x000000000D7DAF28>, <neo.core.channelindex.ChannelIndex object at 0x000000000D7F4BE0>, <neo.core.channelindex.ChannelIndex object at 0x000000000D7F4DA0>, <neo.core.channelindex.ChannelIndex object at 0x000000000D7FA080>, <neo.core.channelindex.ChannelIndex object at 0x000000000D7FA240>, <neo.core.channelindex.ChannelIndex object at 0x000000000D7FA320>, <neo.core.channelindex.ChannelIndex object at 0x000000000D7FA390>, <neo.core.channelindex.ChannelIndex object at 0x000000000D7FA5C0>]
 
 
 We can see that the first groups or ChannelIndex correpond to individual tetrodes and that the last groups
@@ -105,7 +93,7 @@ correpond to the entire electrode (i.e. group of 2 or 3 tetrodes)
 
 
 We can use the channel indexes for plotting the firing rate evolution of multiple units in the same figure. Channel
-indexes defined groups of channel. By default, a channel index is defined for each tetrode.
+indexes define groups of channel. By default, a channel index is defined for each tetrode.
 Let's plot the firing rate evolution of all units of the tetrode 2 of electrode cp (ChannelIndex number 4,
 thus index 3) :
 
@@ -123,7 +111,7 @@ thus index 3) :
 
 
 
-**Total running time of the script:** ( 0 minutes  5.196 seconds)
+**Total running time of the script:** ( 0 minutes  5.463 seconds)
 
 
 

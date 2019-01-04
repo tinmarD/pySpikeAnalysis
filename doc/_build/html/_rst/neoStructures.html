@@ -221,7 +221,7 @@ current directory.</dd>
 <tr class="row-odd"><td><a class="reference internal" href="#neoStructures.NeoAll.plot_spikerate_evolution_group" title="neoStructures.NeoAll.plot_spikerate_evolution_group"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_spikerate_evolution_group</span></code></a>(grp_index[,&nbsp;…])</td>
 <td>Plot the spike rate evolution across all the length of the segment of all units of the channel index specified by grp_index.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#neoStructures.NeoAll.plot_unit_shape" title="neoStructures.NeoAll.plot_unit_shape"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_unit_shape</span></code></a>([unit_pos,&nbsp;plot_mean])</td>
+<tr class="row-even"><td><a class="reference internal" href="#neoStructures.NeoAll.plot_unit_shape" title="neoStructures.NeoAll.plot_unit_shape"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_unit_shape</span></code></a>([unit_pos,&nbsp;plot_mean,&nbsp;ax])</td>
 <td>Plot the shape of unit specified by unit_pos</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#neoStructures.NeoAll.read_event_file" title="neoStructures.NeoAll.read_event_file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_event_file</span></code></a>(event_filepath[,&nbsp;event_csv_sep])</td>
@@ -235,6 +235,17 @@ current directory.</dd>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#neoStructures.NeoAll.subfun_plot_unit_shape" title="neoStructures.NeoAll.subfun_plot_unit_shape"><code class="xref py py-obj docutils literal notranslate"><span class="pre">subfun_plot_unit_shape</span></code></a>(unit_pos[,&nbsp;…])</td>
 <td>Sub-routine for plotting shape of the unit</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="72%" />
+<col width="28%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>export_spike_file_time</strong></td>
+<td>&#160;</td>
 </tr>
 </tbody>
 </table>
@@ -392,6 +403,11 @@ segments specified by segment_pos</p>
 </dd></dl>
 
 <dl class="method">
+<dt id="neoStructures.NeoAll.export_spike_file_time">
+<code class="descname">export_spike_file_time</code><span class="sig-paren">(</span><em>artefact_free_periods_filepath</em>, <em>output_path</em>, <em>unit_pos=[]</em>, <em>sep=';'</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.export_spike_file_time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
 <dt id="neoStructures.NeoAll.get_spikerate_change_ratio_on_epochs">
 <code class="descname">get_spikerate_change_ratio_on_epochs</code><span class="sig-paren">(</span><em>epoch_name_target</em>, <em>epoch_name_ref</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.get_spikerate_change_ratio_on_epochs" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute the mean spikerate on all target and reference epochs, calcul the ratio of these two, for each unit</p>
@@ -451,7 +467,7 @@ segments specified by segment_pos</p>
 
 <dl class="method">
 <dt id="neoStructures.NeoAll.plot_crosscorrelogram">
-<code class="descname">plot_crosscorrelogram</code><span class="sig-paren">(</span><em>unit_pos_a</em>, <em>unit_pos_b</em>, <em>bin_time=array(1.) * ms</em>, <em>max_lag_time=array(80.) * ms</em>, <em>smooth_time=array(10.) * ms</em>, <em>merge_plots=0</em>, <em>same_yscale=0</em>, <em>fill_under_plot=0</em>, <em>do_stat=0</em>, <em>n_surrogates=100</em>, <em>normal_dist_sd=array(10.) * ms</em>, <em>do_plot=1</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.plot_crosscorrelogram" title="Permalink to this definition">¶</a></dt>
+<code class="descname">plot_crosscorrelogram</code><span class="sig-paren">(</span><em>unit_pos_a</em>, <em>unit_pos_b</em>, <em>bin_time=array(1.0) * ms</em>, <em>max_lag_time=array(80.0) * ms</em>, <em>smooth_time=array(10.0) * ms</em>, <em>merge_plots=0</em>, <em>same_yscale=0</em>, <em>fill_under_plot=0</em>, <em>do_stat=0</em>, <em>n_surrogates=100</em>, <em>normal_dist_sd=array(10.0) * ms</em>, <em>do_plot=1</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.plot_crosscorrelogram" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot the cross-correlogram between spiketrains of units specified by <code class="docutils literal notranslate"><span class="pre">unit_pos_a</span></code> and <code class="docutils literal notranslate"><span class="pre">unit_pos_b</span></code></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -630,7 +646,7 @@ will be a band-pass filter. Default : [300, 3000]</p>
 
 <dl class="method">
 <dt id="neoStructures.NeoAll.plot_spikerate_evolution">
-<code class="descname">plot_spikerate_evolution</code><span class="sig-paren">(</span><em>unit_pos=-1</em>, <em>sigma_gauss_kernel=array(30.) * s</em>, <em>merge_plots=0</em>, <em>norm_spikerate=0</em>, <em>plot_events=1</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.plot_spikerate_evolution" title="Permalink to this definition">¶</a></dt>
+<code class="descname">plot_spikerate_evolution</code><span class="sig-paren">(</span><em>unit_pos=-1</em>, <em>sigma_gauss_kernel=array(30.0) * s</em>, <em>merge_plots=0</em>, <em>norm_spikerate=0</em>, <em>plot_events=1</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.plot_spikerate_evolution" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot the spikerate evolution across all the segment duration for units specified by unit_pos</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -661,7 +677,7 @@ will be a band-pass filter. Default : [300, 3000]</p>
 
 <dl class="method">
 <dt id="neoStructures.NeoAll.plot_spikerate_evolution_group">
-<code class="descname">plot_spikerate_evolution_group</code><span class="sig-paren">(</span><em>grp_index</em>, <em>sigma_gauss_kernel=array(30.) * s</em>, <em>merge_plots=0</em>, <em>norm_spikerate=0</em>, <em>mean_plot=0</em>, <em>plot_events=1</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.plot_spikerate_evolution_group" title="Permalink to this definition">¶</a></dt>
+<code class="descname">plot_spikerate_evolution_group</code><span class="sig-paren">(</span><em>grp_index</em>, <em>sigma_gauss_kernel=array(30.0) * s</em>, <em>merge_plots=0</em>, <em>norm_spikerate=0</em>, <em>mean_plot=0</em>, <em>plot_events=1</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.plot_spikerate_evolution_group" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot the spike rate evolution across all the length of the segment of all units of the channel index
 specified by grp_index. The spike rate is computed using the Elephant module</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -696,7 +712,7 @@ specified by grp_index. The spike rate is computed using the Elephant module</p>
 
 <dl class="method">
 <dt id="neoStructures.NeoAll.plot_unit_shape">
-<code class="descname">plot_unit_shape</code><span class="sig-paren">(</span><em>unit_pos=-1</em>, <em>plot_mean=0</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.plot_unit_shape" title="Permalink to this definition">¶</a></dt>
+<code class="descname">plot_unit_shape</code><span class="sig-paren">(</span><em>unit_pos=-1</em>, <em>plot_mean=0</em>, <em>ax=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.plot_unit_shape" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot the shape of unit specified by unit_pos</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -708,6 +724,9 @@ specified by grp_index. The spike rate is computed using the Elephant module</p>
 </dd>
 <dt><strong>plot_mean</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
 <dd><p class="first last">If True, plot the mean of all tetrode templates/shapes</p>
+</dd>
+<dt><strong>ax</strong> <span class="classifier-delimiter">:</span> <span class="classifier">axis | None</span></dt>
+<dd><p class="first last">Axis to plot on. If none create a new figure and an axis</p>
 </dd>
 </dl>
 </td>
@@ -986,7 +1005,7 @@ associated with the spiketrains.</p>
 
 <dl class="method">
 <dt id="neoStructures.NeoEpoch.plot_crosscorrelogram_around_events">
-<code class="descname">plot_crosscorrelogram_around_events</code><span class="sig-paren">(</span><em>unit_pos_a</em>, <em>unit_pos_b</em>, <em>bin_time=array(1.) * ms</em>, <em>max_lag_time=array(80.) * ms</em>, <em>n_repets=100</em>, <em>plot_superpose=1</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoEpoch.plot_crosscorrelogram_around_events" title="Permalink to this definition">¶</a></dt>
+<code class="descname">plot_crosscorrelogram_around_events</code><span class="sig-paren">(</span><em>unit_pos_a</em>, <em>unit_pos_b</em>, <em>bin_time=array(1.0) * ms</em>, <em>max_lag_time=array(80.0) * ms</em>, <em>n_repets=100</em>, <em>plot_superpose=1</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoEpoch.plot_crosscorrelogram_around_events" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Plot the cross-correlogram around the events of neoEpoch. Compute the shift-predictor to give a significance</dt>
 <dd>level. The shift-predictor is computed by shuffling the trials position <code class="docutils literal notranslate"><span class="pre">n_repets</span></code> times. The interval plotted
@@ -1024,7 +1043,7 @@ is equal to the mean +/- 2 times the standard deviation.</dd>
 
 <dl class="method">
 <dt id="neoStructures.NeoEpoch.plot_rasterplot">
-<code class="descname">plot_rasterplot</code><span class="sig-paren">(</span><em>unit_pos=-1</em>, <em>bin_duration=0.01</em>, <em>sigma_gauss_kernel=array(20.) * ms</em>, <em>plot_unit_shape=1</em>, <em>plot_event_signal=1</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoEpoch.plot_rasterplot" title="Permalink to this definition">¶</a></dt>
+<code class="descname">plot_rasterplot</code><span class="sig-paren">(</span><em>unit_pos=-1</em>, <em>bin_duration=0.01</em>, <em>sigma_gauss_kernel=array(20.0) * ms</em>, <em>plot_unit_shape=1</em>, <em>plot_event_signal=1</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoEpoch.plot_rasterplot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot the PSTH (peri/post stimulus time histogram) for selected units. A gaussian kernel is used for
 estimating the instantaneous firing rate. Plot the figure if <code class="docutils literal notranslate"><span class="pre">save_fig</span></code> is True, in <code class="docutils literal notranslate"><span class="pre">fig_dirpath_raster</span></code></p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -1292,7 +1311,7 @@ for both NeoAll and NeoEpochs</p>
 
 <dl class="function">
 <dt id="neoStructures.realign_spike_trace">
-<code class="descclassname">neoStructures.</code><code class="descname">realign_spike_trace</code><span class="sig-paren">(</span><em>spike_trace</em>, <em>spike_trace_filtered=[]</em>, <em>resample_factor=5</em>, <em>interp_method='cubic'</em>, <em>half_extremum_win=5</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.realign_spike_trace" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">neoStructures.</code><code class="descname">realign_spike_trace</code><span class="sig-paren">(</span><em>spike_trace</em>, <em>spike_trace_filtered=[]</em>, <em>resample_factor=5</em>, <em>interp_method='cubic'</em>, <em>half_extremum_win=15</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.realign_spike_trace" title="Permalink to this definition">¶</a></dt>
 <dd><p>Re-align the spike trace so that the extremum in on the center of the window. The extremum position is computed
 on the filtered spike trace. Before taking the extremum, the filtered spike trace is upsampled and interpolated.
 The returned spike trace is the upsampled and interpolated trace, aligned on the center of the window.</p>

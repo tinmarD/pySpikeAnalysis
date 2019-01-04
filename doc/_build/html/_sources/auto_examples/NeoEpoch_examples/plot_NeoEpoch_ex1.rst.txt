@@ -48,6 +48,8 @@ Load neoEpoch data with _pickle
     with open(join(data_dir, neo_epoch_filename), 'rb') as f:
         neo_epoch = _pickle.load(f)
 
+    neo_epoch.save_fig = 0
+
 
 
 
@@ -91,7 +93,7 @@ Plot the raster plot for unit 4
 
 
 
-**Total running time of the script:** ( 0 minutes  1.732 seconds)
+**Total running time of the script:** ( 0 minutes  1.070 seconds)
 
 
 

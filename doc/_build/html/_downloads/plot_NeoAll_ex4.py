@@ -1,6 +1,6 @@
 """
 ===========================
-    Neo All - example 4 
+    Neo All - example 4
 ===========================
 
 In this example, we look at the single unit activity around interictal epileptic discharges (IEDs). To do this we will

@@ -149,17 +149,17 @@
 </pre></div>
 </div>
 <p>First create a NeoAll instance</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">neo_all</span> <span class="o">=</span> <span class="n">NeoAll</span><span class="p">(</span><span class="n">spykingcircus_dirpath</span><span class="p">,</span> <span class="n">results_filename</span><span class="p">,</span> <span class="n">probe_filepath</span><span class="p">,</span> <span class="n">signal_dirpath</span><span class="o">=</span><span class="n">signal_dirpath</span><span class="p">,</span>
-                <span class="n">event_filepath</span><span class="o">=</span><span class="n">event_filepath</span><span class="p">,</span> <span class="n">fig_dirpath</span><span class="o">=</span><span class="n">figure_dirpath</span><span class="p">,</span> <span class="n">save_fig</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># neo_all = NeoAll(spykingcircus_dirpath, results_filename, probe_filepath, signal_dirpath=signal_dirpath,</span>
+<span class="c1">#                 event_filepath=event_filepath, fig_dirpath=figure_dirpath, save_fig=1)</span>
 </pre></div>
 </div>
 <p>And create the NeoEpoch instance</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">neo_epoch</span> <span class="o">=</span> <span class="n">NeoEpoch</span><span class="p">(</span><span class="n">neo_all</span><span class="p">,</span> <span class="n">event_filepath</span><span class="o">=</span><span class="n">event_filepath</span><span class="p">,</span> <span class="n">time_pre</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">time_post</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">neo_epoch</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># neo_epoch = NeoEpoch(neo_all, event_filepath=event_filepath, time_pre=0.3, time_post=0.3)</span>
+<span class="c1"># print(neo_epoch)</span>
 </pre></div>
 </div>
 <p>You can save it with the save method :</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">neo_epoch</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;C:\Users\deudon\Desktop\SpikeSorting\_Scripts\_Python\pySpikeAnalysis\pySpikeAnalysis\sample_data&#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># neo_epoch.save(r&#39;C:\Users\deudon\Desktop\SpikeSorting\_Scripts\_Python\pySpikeAnalysis\pySpikeAnalysis\sample_data&#39;)</span>
 </pre></div>
 </div>
 <p><strong>Total running time of the script:</strong> ( 0 minutes  0.000 seconds)</p>

@@ -25,6 +25,8 @@ neo_epoch_filename = r'neoepoch_071118_1132.p'
 with open(join(data_dir, neo_epoch_filename), 'rb') as f:
     neo_epoch = _pickle.load(f)
 
+neo_epoch.save_fig = 0
+
 ##############################
 # See information about NeoAll
 print(neo_epoch)

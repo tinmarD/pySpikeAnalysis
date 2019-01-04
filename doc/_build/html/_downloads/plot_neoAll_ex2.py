@@ -24,7 +24,6 @@ from os.path import isdir, join
 data_dir = join('pySpikeAnalysis', 'sample_data') if isdir('pySpikeAnalysis') else join('..', '..', 'pySpikeAnalysis', 'sample_data')
 spykingcircus_dir = r'SpykingCircus_results'
 probe_filename = r'000_AA.prb'
-signal_dir = r'EDF'
 results_filename = r'spykingcircusres'
 
 neoAll = NeoAll(join(data_dir, spykingcircus_dir), results_filename, join(data_dir, probe_filename), save_fig=0)
@@ -53,7 +52,7 @@ neoAll.plot_crosscorrelogram(0, 1, bin_time=1*ms, max_lag_time=25*ms)
 # in which a jitter is added to the time of the spikes. The jitter is computed from a normal distribution whose standard
 # deviation is fixed by the normal_dist_sd parameter. The 99% confidence interval computed from the jittered spiketrains
 # is shown on top of the cross-correlogram.
-neoAll.plot_crosscorrelogram(0, 1, do_stat=True, n_surrogates=100, normal_dist_sd=25*ms)
+neoAll.plot_crosscorrelogram(0, 1, do_stat=True, n_surrogates=20, normal_dist_sd=25*ms)
 
 ##############################
 # If unit_pos_a and unit_pos_b parameters are equals, the autocorrelogram is computed.

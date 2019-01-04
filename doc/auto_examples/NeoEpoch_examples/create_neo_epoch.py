@@ -32,15 +32,17 @@ epoch_names = ['Pre-IED baseline', 'Pre-IED', 'IED', 'Slow wave', 'Post-IED']
 
 #################################
 # First create a NeoAll instance
-neo_all = NeoAll(spykingcircus_dirpath, results_filename, probe_filepath, signal_dirpath=signal_dirpath,
-                event_filepath=event_filepath, fig_dirpath=figure_dirpath, save_fig=1)
+
+# neo_all = NeoAll(spykingcircus_dirpath, results_filename, probe_filepath, signal_dirpath=signal_dirpath,
+#                 event_filepath=event_filepath, fig_dirpath=figure_dirpath, save_fig=1)
 
 ##################################
 # And create the NeoEpoch instance
-neo_epoch = NeoEpoch(neo_all, event_filepath=event_filepath, time_pre=0.3, time_post=0.3)
-print(neo_epoch)
+
+# neo_epoch = NeoEpoch(neo_all, event_filepath=event_filepath, time_pre=0.3, time_post=0.3)
+# print(neo_epoch)
 
 #######################################
 # You can save it with the save method :
 
-neo_epoch.save(r'C:\Users\deudon\Desktop\SpikeSorting\_Scripts\_Python\pySpikeAnalysis\pySpikeAnalysis\sample_data')
+# neo_epoch.save(r'C:\Users\deudon\Desktop\SpikeSorting\_Scripts\_Python\pySpikeAnalysis\pySpikeAnalysis\sample_data')

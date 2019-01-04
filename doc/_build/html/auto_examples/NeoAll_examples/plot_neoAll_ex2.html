@@ -146,7 +146,6 @@ versus another. See <a class="reference external" href="https://www.med.upenn.ed
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data_dir</span> <span class="o">=</span> <span class="n">join</span><span class="p">(</span><span class="s1">&#39;pySpikeAnalysis&#39;</span><span class="p">,</span> <span class="s1">&#39;sample_data&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">isdir</span><span class="p">(</span><span class="s1">&#39;pySpikeAnalysis&#39;</span><span class="p">)</span> <span class="k">else</span> <span class="n">join</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">,</span> <span class="s1">&#39;..&#39;</span><span class="p">,</span> <span class="s1">&#39;pySpikeAnalysis&#39;</span><span class="p">,</span> <span class="s1">&#39;sample_data&#39;</span><span class="p">)</span>
 <span class="n">spykingcircus_dir</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;SpykingCircus_results&#39;</span>
 <span class="n">probe_filename</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;000_AA.prb&#39;</span>
-<span class="n">signal_dir</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;EDF&#39;</span>
 <span class="n">results_filename</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;spykingcircusres&#39;</span>
 
 <span class="n">neoAll</span> <span class="o">=</span> <span class="n">NeoAll</span><span class="p">(</span><span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span> <span class="n">spykingcircus_dir</span><span class="p">),</span> <span class="n">results_filename</span><span class="p">,</span> <span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span> <span class="n">probe_filename</span><span class="p">),</span> <span class="n">save_fig</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -182,7 +181,7 @@ It can be changed to zoom on the peak near the origin :</p>
 in which a jitter is added to the time of the spikes. The jitter is computed from a normal distribution whose standard
 deviation is fixed by the normal_dist_sd parameter. The 99% confidence interval computed from the jittered spiketrains
 is shown on top of the cross-correlogram.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">neoAll</span><span class="o">.</span><span class="n">plot_crosscorrelogram</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">do_stat</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">n_surrogates</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">normal_dist_sd</span><span class="o">=</span><span class="mi">25</span><span class="o">*</span><span class="n">ms</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">neoAll</span><span class="o">.</span><span class="n">plot_crosscorrelogram</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">do_stat</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">n_surrogates</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">normal_dist_sd</span><span class="o">=</span><span class="mi">25</span><span class="o">*</span><span class="n">ms</span><span class="p">)</span>
 </pre></div>
 </div>
 <img alt="../../_images/sphx_glr_plot_neoAll_ex2_003.png" class="align-center" src="../../_images/sphx_glr_plot_neoAll_ex2_003.png" />
@@ -213,7 +212,7 @@ is shown on top of the cross-correlogram.</p>
 </pre></div>
 </div>
 <img alt="../../_images/sphx_glr_plot_neoAll_ex2_009.png" class="align-center" src="../../_images/sphx_glr_plot_neoAll_ex2_009.png" />
-<p><strong>Total running time of the script:</strong> ( 0 minutes  16.418 seconds)</p>
+<p><strong>Total running time of the script:</strong> ( 0 minutes  8.688 seconds)</p>
 <div class="sphx-glr-footer docutils container">
 <div class="sphx-glr-download docutils container">
 <a class="reference download internal" href="../../_downloads/plot_neoAll_ex2.py" download=""><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">plot_neoAll_ex2.py</span></code></a></div>

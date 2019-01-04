@@ -1,6 +1,6 @@
 """
 ======================================================
-    Neo All - example 5 - Channel Groups (Index)
+    Neo All - example 5 - Channel Groups / Index
 ======================================================
 
 This example show how to use the channel indexes in the NeoAll class. In NeoAll, channel indexes are defined for each
@@ -16,15 +16,13 @@ from os.path import isdir, join
 
 #######################
 # Import the data and create the NeoAll instance
-data_dir = join('pySpikeAnalysis', 'sample_data') if isdir('pySpikeAnalysis') else join('..', '..', 'pySpikeAnalysis', 'sample_data_whole')
+data_dir = join('pySpikeAnalysis', 'sample_data') if isdir('pySpikeAnalysis') else join('..', '..', 'pySpikeAnalysis', 'sample_data')
 spykingcircus_dir = r'SpykingCircus_results'
 probe_filename = r'000_AA.prb'
-signal_dir = join(data_dir, r'EDF')
 results_filename = r'spykingcircusres'
 artefact_csv_filepath = join(data_dir, r'artefact_free_periods.csv')
 
-neoAll = NeoAll(join(data_dir, spykingcircus_dir), results_filename, join(data_dir, probe_filename),
-                signal_dirpath=signal_dir, save_fig=0)
+neoAll = NeoAll(join(data_dir, spykingcircus_dir), results_filename, join(data_dir, probe_filename), save_fig=0)
 
 ##############################
 # See information about NeoAll
@@ -32,7 +30,7 @@ print(neoAll)
 
 ###############################
 # Let's look at the different channel indexes :
-print(neoAll.channel_indexes[0])
+print(neoAll.channel_indexes)
 
 
 ################################
@@ -41,7 +39,7 @@ print(neoAll.channel_indexes[0])
 
 #################################
 # We can use the channel indexes for plotting the firing rate evolution of multiple units in the same figure. Channel
-# indexes defined groups of channel. By default, a channel index is defined for each tetrode.
+# indexes define groups of channel. By default, a channel index is defined for each tetrode.
 # Let's plot the firing rate evolution of all units of the tetrode 2 of electrode cp (ChannelIndex number 4,
 # thus index 3) :
 neoAll.plot_spikerate_evolution_group(grp_index=3)

@@ -29,7 +29,6 @@ Details of the files :
 
 ##################################
 # First import the neoStructures :
-
 from neoStructures import *
 import matplotlib.pyplot as plt
 from os.path import isdir, join
@@ -39,7 +38,6 @@ from os.path import isdir, join
 data_dir = join('pySpikeAnalysis', 'sample_data') if isdir('pySpikeAnalysis') else join('..', '..', 'pySpikeAnalysis', 'sample_data')
 spykingcircus_dir = r'SpykingCircus_results'
 probe_filename = r'000_AA.prb'
-signal_dir = r'EDF'
 results_filename = r'spykingcircusres'
 
 neoAll = NeoAll(join(data_dir, spykingcircus_dir), results_filename, join(data_dir, probe_filename), save_fig=0)

@@ -156,6 +156,39 @@
 </dd></dl>
 
 <dl class="function">
+<dt id="eeg_utils.io_eeg_to_mne">
+<code class="descclassname">eeg_utils.</code><code class="descname">io_eeg_to_mne</code><span class="sig-paren">(</span><em>filepath</em>, <em>read_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#eeg_utils.io_eeg_to_mne" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import an EEG file to MNE as a Raw instance.
+Supported formats : ‘edf’, ‘eeg’, ‘trc’</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>filepath</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">EEG filepath</p>
+</dd>
+<dt><strong>read_data</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: True)</span></dt>
+<dd><p class="first last">If True, read the data</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>mne_raw</strong> <span class="classifier-delimiter">:</span> <span class="classifier">MNE RAW instance</span></dt>
+<dd><p class="first last">Output MNE structure</p>
+</dd>
+<dt><strong>ch_names</strong> <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd><p class="first last">Channel names</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
 <dt id="eeg_utils.readfileedf">
 <code class="descclassname">eeg_utils.</code><code class="descname">readfileedf</code><span class="sig-paren">(</span><em>edfilepath</em>, <em>t_start=[]</em>, <em>t_end=[]</em>, <em>channel_sel=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#eeg_utils.readfileedf" title="Permalink to this definition">¶</a></dt>
 <dd><p>Read an edf file using the mne package</p>

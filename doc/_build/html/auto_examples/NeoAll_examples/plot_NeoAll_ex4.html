@@ -178,14 +178,15 @@ Here we can see that the neoAll already contains events :</p>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
 <div class="sphx-glr-script-out highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Event</span> <span class="n">name</span> <span class="p">:</span> <span class="n">Pointe</span>
-<span class="n">Event</span> <span class="n">times</span> <span class="p">:</span> <span class="p">[</span> <span class="mf">127.59</span>    <span class="mf">132.4795</span>  <span class="mf">134.4737</span>  <span class="mf">149.087</span>   <span class="mf">230.2434</span>  <span class="mf">232.3191</span>  <span class="mf">270.5974</span>
-  <span class="mf">441.8186</span>  <span class="mf">501.2786</span>  <span class="mf">617.0066</span>  <span class="mf">753.7445</span>  <span class="mf">770.4778</span>  <span class="mf">816.693</span>   <span class="mf">974.7162</span>
-  <span class="mf">982.7807</span> <span class="mf">1157.6631</span> <span class="mf">1169.6899</span> <span class="mf">1226.8002</span> <span class="mf">1478.6519</span> <span class="mf">1597.9215</span> <span class="mf">1635.7244</span>
- <span class="mf">1904.1508</span> <span class="mf">1912.3301</span> <span class="mf">1937.7698</span> <span class="mf">1963.7687</span> <span class="mf">1998.6647</span> <span class="mf">2029.0295</span> <span class="mf">2105.2268</span>
- <span class="mf">2109.5313</span> <span class="mf">2136.0479</span> <span class="mf">2188.8211</span> <span class="mf">2296.0886</span> <span class="mf">2621.6179</span> <span class="mf">2900.5309</span> <span class="mf">3206.0556</span>
- <span class="mf">3321.9253</span> <span class="mf">3387.3586</span> <span class="mf">3627.9234</span> <span class="mf">3790.2395</span> <span class="mf">3927.836</span>  <span class="mf">4266.9786</span> <span class="mf">4441.5314</span>
- <span class="mf">4585.17</span>   <span class="mf">4827.7493</span> <span class="mf">5235.3367</span> <span class="mf">5362.5499</span> <span class="mf">5547.8424</span> <span class="mf">5567.3848</span> <span class="mf">5590.6934</span>
- <span class="mf">5674.0067</span> <span class="mf">5791.6717</span><span class="p">]</span> <span class="n">s</span>
+<span class="n">Event</span> <span class="n">times</span> <span class="p">:</span> <span class="p">[</span>  <span class="mf">127.59</span>     <span class="mf">132.4795</span>   <span class="mf">134.4737</span>   <span class="mf">149.087</span>    <span class="mf">230.2434</span>   <span class="mf">232.3191</span>
+   <span class="mf">270.5974</span>   <span class="mf">441.8186</span>   <span class="mf">501.2786</span>   <span class="mf">617.0066</span>   <span class="mf">753.7445</span>   <span class="mf">770.4778</span>
+   <span class="mf">816.693</span>    <span class="mf">974.7162</span>   <span class="mf">982.7807</span>  <span class="mf">1157.6631</span>  <span class="mf">1169.6899</span>  <span class="mf">1226.8002</span>
+  <span class="mf">1478.6519</span>  <span class="mf">1597.9215</span>  <span class="mf">1635.7244</span>  <span class="mf">1904.1508</span>  <span class="mf">1912.3301</span>  <span class="mf">1937.7698</span>
+  <span class="mf">1963.7687</span>  <span class="mf">1998.6647</span>  <span class="mf">2029.0295</span>  <span class="mf">2105.2268</span>  <span class="mf">2109.5313</span>  <span class="mf">2136.0479</span>
+  <span class="mf">2188.8211</span>  <span class="mf">2296.0886</span>  <span class="mf">2621.6179</span>  <span class="mf">2900.5309</span>  <span class="mf">3206.0556</span>  <span class="mf">3321.9253</span>
+  <span class="mf">3387.3586</span>  <span class="mf">3627.9234</span>  <span class="mf">3790.2395</span>  <span class="mf">3927.836</span>   <span class="mf">4266.9786</span>  <span class="mf">4441.5314</span>  <span class="mf">4585.17</span>
+  <span class="mf">4827.7493</span>  <span class="mf">5235.3367</span>  <span class="mf">5362.5499</span>  <span class="mf">5547.8424</span>  <span class="mf">5567.3848</span>  <span class="mf">5590.6934</span>
+  <span class="mf">5674.0067</span>  <span class="mf">5791.6717</span><span class="p">]</span> <span class="n">s</span>
 </pre></div>
 </div>
 <p>Let’s now define epochs on each segments (NeoAll class contains one Neo.segment for each unit), using the
@@ -210,7 +211,7 @@ of the IEDs we have defined.</p>
 <p>We can see that some units start firing during the IED and are almost silent before, in the Pre-IED period. Further
 analyses can be conducted using the NeoEpoch class which allows to plot rasterplot of the different units around
 the events of interest.</p>
-<p><strong>Total running time of the script:</strong> ( 0 minutes  0.780 seconds)</p>
+<p><strong>Total running time of the script:</strong> ( 0 minutes  4.126 seconds)</p>
 <div class="sphx-glr-footer docutils container">
 <div class="sphx-glr-download docutils container">
 <a class="reference download internal" href="../../_downloads/plot_NeoAll_ex4.py" download=""><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">plot_NeoAll_ex4.py</span></code></a></div>

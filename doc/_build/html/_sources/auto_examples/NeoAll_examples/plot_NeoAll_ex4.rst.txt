@@ -4,7 +4,7 @@
 
 
 ===========================
-    Neo All - example 4 
+    Neo All - example 4
 ===========================
 
 In this example, we look at the single unit activity around interictal epileptic discharges (IEDs). To do this we will
@@ -111,14 +111,15 @@ We can access the times of the events and the name of the events :
  Out::
 
     Event name : Pointe
-    Event times : [ 127.59    132.4795  134.4737  149.087   230.2434  232.3191  270.5974
-      441.8186  501.2786  617.0066  753.7445  770.4778  816.693   974.7162
-      982.7807 1157.6631 1169.6899 1226.8002 1478.6519 1597.9215 1635.7244
-     1904.1508 1912.3301 1937.7698 1963.7687 1998.6647 2029.0295 2105.2268
-     2109.5313 2136.0479 2188.8211 2296.0886 2621.6179 2900.5309 3206.0556
-     3321.9253 3387.3586 3627.9234 3790.2395 3927.836  4266.9786 4441.5314
-     4585.17   4827.7493 5235.3367 5362.5499 5547.8424 5567.3848 5590.6934
-     5674.0067 5791.6717] s
+    Event times : [  127.59     132.4795   134.4737   149.087    230.2434   232.3191
+       270.5974   441.8186   501.2786   617.0066   753.7445   770.4778
+       816.693    974.7162   982.7807  1157.6631  1169.6899  1226.8002
+      1478.6519  1597.9215  1635.7244  1904.1508  1912.3301  1937.7698
+      1963.7687  1998.6647  2029.0295  2105.2268  2109.5313  2136.0479
+      2188.8211  2296.0886  2621.6179  2900.5309  3206.0556  3321.9253
+      3387.3586  3627.9234  3790.2395  3927.836   4266.9786  4441.5314  4585.17
+      4827.7493  5235.3367  5362.5499  5547.8424  5567.3848  5590.6934
+      5674.0067  5791.6717] s
 
 
 Let's now define epochs on each segments (NeoAll class contains one Neo.segment for each unit), using the
@@ -177,7 +178,7 @@ analyses can be conducted using the NeoEpoch class which allows to plot rasterpl
 the events of interest.
 
 
-**Total running time of the script:** ( 0 minutes  0.780 seconds)
+**Total running time of the script:** ( 0 minutes  4.126 seconds)
 
 
 

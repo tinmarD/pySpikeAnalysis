@@ -42,7 +42,6 @@ Import the data and create the NeoAll instance
     data_dir = join('pySpikeAnalysis', 'sample_data') if isdir('pySpikeAnalysis') else join('..', '..', 'pySpikeAnalysis', 'sample_data')
     spykingcircus_dir = r'SpykingCircus_results'
     probe_filename = r'000_AA.prb'
-    signal_dir = r'EDF'
     results_filename = r'spykingcircusres'
 
     neoAll = NeoAll(join(data_dir, spykingcircus_dir), results_filename, join(data_dir, probe_filename), save_fig=0)
@@ -123,7 +122,7 @@ is shown on top of the cross-correlogram.
 
 .. code-block:: python
 
-    neoAll.plot_crosscorrelogram(0, 1, do_stat=True, n_surrogates=100, normal_dist_sd=25*ms)
+    neoAll.plot_crosscorrelogram(0, 1, do_stat=True, n_surrogates=20, normal_dist_sd=25*ms)
 
 
 
@@ -219,7 +218,7 @@ If same_yscale is True, the cross-correlograms are smoothed and the same y-scale
 
 
 
-**Total running time of the script:** ( 0 minutes  16.418 seconds)
+**Total running time of the script:** ( 0 minutes  8.688 seconds)
 
 
 

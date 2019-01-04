@@ -29,7 +29,6 @@ Details of the files :
 
 ##################################
 # First import the neoStructures :
-
 from neoStructures import *
 import matplotlib.pyplot as plt
 from os.path import isdir, join

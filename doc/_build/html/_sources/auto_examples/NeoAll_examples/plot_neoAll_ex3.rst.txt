@@ -35,10 +35,12 @@ Import the data and create the NeoAll instance
 
 .. code-block:: python
 
-    data_dir = join('pySpikeAnalysis', 'sample_data') if isdir('pySpikeAnalysis') else join('..', '..', 'pySpikeAnalysis', 'sample_data_whole')
+    data_dir = join('pySpikeAnalysis', 'sample_data') if isdir('pySpikeAnalysis') else join('..', '..', 'pySpikeAnalysis', 'sample_data')
+    data_dir_sig = join('pySpikeAnalysis', 'sample_data') if isdir('pySpikeAnalysis') else join('..', '..', 'pySpikeAnalysis', 'sample_data_whole')
     spykingcircus_dir = r'SpykingCircus_results'
     probe_filename = r'000_AA.prb'
-    signal_dir = join(data_dir, r'EDF')
+    # signal_dir = join(data_dir_sig, r'EDF')
+    signal_dir = ''
     results_filename = r'spykingcircusres'
     artefact_csv_filepath = join(data_dir, r'artefact_free_periods.csv')
 
@@ -63,15 +65,6 @@ directory containing the data signal used for the spike-sorting.
 
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out::
-
-    Extracting edf Parameters from ..\..\pySpikeAnalysis\sample_data_whole\EDF\micro_30kHz.edf...
-    EDF file detected
-    Setting channel info structure...
-    Created Raw.info structure...
-    Ready.
 
 
 See information about NeoAll, we now have access to the number of channels and the number of electrodes.
@@ -91,8 +84,7 @@ See information about NeoAll, we now have access to the number of channels and t
  Out::
 
     NeoAll Instance with 54 units. 1 Neo segment per unit. Each segment contains 1 Neo spiketrain
-    14 channel indexes
-    37 channels and 37 electrodes
+    10 channel indexes
 
 
 Providing the artefact_csv_filepath, which must be a CSV file with 3 columns in the order 'Filename', 't_start' and
@@ -127,25 +119,13 @@ spike trace and to investigate the effects of filtering on the unit shape.
 
 .. code-block:: python
 
-    neoAll.plot_raw_unit_shape(34, signal_dir, artefact_csv_filepath, fn_hz=[300, 3000], plot_density_plot=False)
+
+    # neoAll.plot_raw_unit_shape(34, signal_dir, artefact_csv_filepath, fn_hz=[300, 3000], plot_density_plot=False)
 
 
 
 
-.. image:: /auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex3_001.png
-    :align: center
 
-
-.. rst-class:: sphx-glr-script-out
-
- Out::
-
-    1206 spikes in the spike train of unit temp_34
-    Extracting edf Parameters from ..\..\pySpikeAnalysis\sample_data_whole\EDF\micro_30kHz.edf...
-    EDF file detected
-    Setting channel info structure...
-    Created Raw.info structure...
-    Ready.
 
 
 Density plot can be shown :
@@ -154,25 +134,13 @@ Density plot can be shown :
 
 .. code-block:: python
 
-    neoAll.plot_raw_unit_shape(34, signal_dir, artefact_csv_filepath, fn_hz=[300, 3000], plot_mean_shape=False)
+
+    # neoAll.plot_raw_unit_shape(34, signal_dir, artefact_csv_filepath, fn_hz=[300, 3000], plot_mean_shape=False)
 
 
 
 
-.. image:: /auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex3_002.png
-    :align: center
 
-
-.. rst-class:: sphx-glr-script-out
-
- Out::
-
-    1206 spikes in the spike train of unit temp_34
-    Extracting edf Parameters from ..\..\pySpikeAnalysis\sample_data_whole\EDF\micro_30kHz.edf...
-    EDF file detected
-    Setting channel info structure...
-    Created Raw.info structure...
-    Ready.
 
 
 It is possible to re-align the spike traces based on the extrema by setting realign to True
@@ -181,25 +149,13 @@ It is possible to re-align the spike traces based on the extrema by setting real
 
 .. code-block:: python
 
-    neoAll.plot_raw_unit_shape(34, signal_dir, artefact_csv_filepath, fn_hz=[300, 3000], realign=True, plot_density_plot=False)
+
+    # neoAll.plot_raw_unit_shape(34, signal_dir, artefact_csv_filepath, fn_hz=[300, 3000], realign=True, plot_density_plot=False)
 
 
 
 
-.. image:: /auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex3_003.png
-    :align: center
 
-
-.. rst-class:: sphx-glr-script-out
-
- Out::
-
-    1206 spikes in the spike train of unit temp_34
-    Extracting edf Parameters from ..\..\pySpikeAnalysis\sample_data_whole\EDF\micro_30kHz.edf...
-    EDF file detected
-    Setting channel info structure...
-    Created Raw.info structure...
-    Ready.
 
 
 Realigned density plot :
@@ -208,25 +164,13 @@ Realigned density plot :
 
 .. code-block:: python
 
-    neoAll.plot_raw_unit_shape(34, signal_dir, artefact_csv_filepath, fn_hz=[300, 3000], realign=True, plot_mean_shape=False)
+
+    # neoAll.plot_raw_unit_shape(34, signal_dir, artefact_csv_filepath, fn_hz=[300, 3000], realign=True, plot_mean_shape=False)
 
 
 
 
-.. image:: /auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex3_004.png
-    :align: center
 
-
-.. rst-class:: sphx-glr-script-out
-
- Out::
-
-    1206 spikes in the spike train of unit temp_34
-    Extracting edf Parameters from ..\..\pySpikeAnalysis\sample_data_whole\EDF\micro_30kHz.edf...
-    EDF file detected
-    Setting channel info structure...
-    Created Raw.info structure...
-    Ready.
 
 
 Comparison can be made with the shape obtained from Spyking-Circus results :
@@ -235,18 +179,16 @@ Comparison can be made with the shape obtained from Spyking-Circus results :
 
 .. code-block:: python
 
-    neoAll.plot_unit_shape(34)
+
+    # neoAll.plot_unit_shape(34)
 
 
 
 
-.. image:: /auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex3_005.png
-    :align: center
 
 
 
-
-**Total running time of the script:** ( 0 minutes  36.232 seconds)
+**Total running time of the script:** ( 0 minutes  0.505 seconds)
 
 
 
