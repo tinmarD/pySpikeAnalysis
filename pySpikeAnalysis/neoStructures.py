@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import division
 import matplotlib
-matplotlib.use('TkAgg')
+# matplotlib.use('TkAgg')
 import h5py
 import numpy as np
 import neo

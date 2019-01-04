@@ -2,129 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="414f1519-9ced-4db7-9a18-87a1fac69a47" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_NeoAll_ex4_001.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex3_001.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex3_002.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex3_003.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex3_004.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex3_005.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/doctrees/_rst/eeg_utils.doctree" afterPath="$PROJECT_DIR$/doc/_build/doctrees/_rst/eeg_utils.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/doctrees/_rst/neoStructures.doctree" afterPath="$PROJECT_DIR$/doc/_build/doctrees/_rst/neoStructures.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/doctrees/auto_examples/NeoAll_examples/plot_NeoAll_ex1.doctree" afterPath="$PROJECT_DIR$/doc/_build/doctrees/auto_examples/NeoAll_examples/plot_NeoAll_ex1.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/doctrees/auto_examples/NeoAll_examples/plot_NeoAll_ex4.doctree" afterPath="$PROJECT_DIR$/doc/_build/doctrees/auto_examples/NeoAll_examples/plot_NeoAll_ex4.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/doctrees/auto_examples/NeoAll_examples/plot_NeoAll_ex5.doctree" afterPath="$PROJECT_DIR$/doc/_build/doctrees/auto_examples/NeoAll_examples/plot_NeoAll_ex5.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/doctrees/auto_examples/NeoAll_examples/plot_neoAll_ex2.doctree" afterPath="$PROJECT_DIR$/doc/_build/doctrees/auto_examples/NeoAll_examples/plot_neoAll_ex2.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/doctrees/auto_examples/NeoAll_examples/plot_neoAll_ex3.doctree" afterPath="$PROJECT_DIR$/doc/_build/doctrees/auto_examples/NeoAll_examples/plot_neoAll_ex3.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/doctrees/auto_examples/NeoEpoch_examples/create_neo_epoch.doctree" afterPath="$PROJECT_DIR$/doc/_build/doctrees/auto_examples/NeoEpoch_examples/create_neo_epoch.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/doctrees/auto_examples/NeoEpoch_examples/plot_NeoEpoch_ex1.doctree" afterPath="$PROJECT_DIR$/doc/_build/doctrees/auto_examples/NeoEpoch_examples/plot_NeoEpoch_ex1.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/doctrees/environment.pickle" afterPath="$PROJECT_DIR$/doc/_build/doctrees/environment.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_downloads/auto_examples_jupyter.zip" afterPath="$PROJECT_DIR$/doc/_build/html/_downloads/auto_examples_jupyter.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_downloads/auto_examples_python.zip" afterPath="$PROJECT_DIR$/doc/_build/html/_downloads/auto_examples_python.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_NeoAll_ex1_001.png" afterPath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_NeoAll_ex1_001.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_NeoAll_ex1_002.png" afterPath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_NeoAll_ex1_002.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_NeoAll_ex1_003.png" afterPath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_NeoAll_ex1_003.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_NeoAll_ex1_004.png" afterPath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_NeoAll_ex1_004.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_NeoAll_ex1_thumb.png" afterPath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_NeoAll_ex1_thumb.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_NeoAll_ex4_thumb.png" afterPath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_NeoAll_ex4_thumb.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_NeoAll_ex5_001.png" afterPath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_NeoAll_ex5_001.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_NeoAll_ex5_thumb.png" afterPath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_NeoAll_ex5_thumb.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_NeoEpoch_ex1_001.png" afterPath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_NeoEpoch_ex1_001.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex2_001.png" afterPath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex2_001.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex2_002.png" afterPath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex2_002.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex2_003.png" afterPath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex2_003.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex2_004.png" afterPath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex2_004.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex2_005.png" afterPath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex2_005.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex2_006.png" afterPath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex2_006.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex2_007.png" afterPath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex2_007.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex2_008.png" afterPath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex2_008.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex2_009.png" afterPath="$PROJECT_DIR$/doc/_build/html/_images/sphx_glr_plot_neoAll_ex2_009.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/objects.inv" afterPath="$PROJECT_DIR$/doc/_build/html/objects.inv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_NeoAll_ex1_001.png" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_NeoAll_ex1_001.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_NeoAll_ex1_002.png" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_NeoAll_ex1_002.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_NeoAll_ex1_003.png" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_NeoAll_ex1_003.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_NeoAll_ex1_004.png" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_NeoAll_ex1_004.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_NeoAll_ex5_001.png" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_NeoAll_ex5_001.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_001.png" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_001.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_002.png" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_002.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_003.png" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_003.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_004.png" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_004.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_005.png" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_005.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_006.png" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_006.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_007.png" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_007.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_008.png" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_008.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_009.png" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_009.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/thumb/sphx_glr_plot_NeoAll_ex1_thumb.png" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/thumb/sphx_glr_plot_NeoAll_ex1_thumb.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/thumb/sphx_glr_plot_NeoAll_ex4_thumb.png" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/thumb/sphx_glr_plot_NeoAll_ex4_thumb.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/thumb/sphx_glr_plot_NeoAll_ex5_thumb.png" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/images/thumb/sphx_glr_plot_NeoAll_ex5_thumb.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex4_codeobj.pickle" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex4_codeobj.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_neoAll_ex3_codeobj.pickle" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_neoAll_ex3_codeobj.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoEpoch_examples/create_neo_epoch_codeobj.pickle" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoEpoch_examples/create_neo_epoch_codeobj.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoEpoch_examples/images/sphx_glr_plot_NeoEpoch_ex1_001.png" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoEpoch_examples/images/sphx_glr_plot_NeoEpoch_ex1_001.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoEpoch_examples/plot_NeoEpoch_ex1_codeobj.pickle" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoEpoch_examples/plot_NeoEpoch_ex1_codeobj.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/auto_examples_jupyter.zip" afterPath="$PROJECT_DIR$/doc/auto_examples/auto_examples_jupyter.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/auto_examples_python.zip" afterPath="$PROJECT_DIR$/doc/auto_examples/auto_examples_python.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_downloads/create_neo_epoch.ipynb" afterPath="$PROJECT_DIR$/doc/_build/html/_downloads/create_neo_epoch.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_downloads/create_neo_epoch.py" afterPath="$PROJECT_DIR$/doc/_build/html/_downloads/create_neo_epoch.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_NeoAll_ex1.ipynb" afterPath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_NeoAll_ex1.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_NeoAll_ex1.py" afterPath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_NeoAll_ex1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_NeoAll_ex4.ipynb" afterPath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_NeoAll_ex4.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_NeoAll_ex4.py" afterPath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_NeoAll_ex4.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_NeoAll_ex5.ipynb" afterPath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_NeoAll_ex5.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_NeoAll_ex5.py" afterPath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_NeoAll_ex5.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_NeoEpoch_ex1.ipynb" afterPath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_NeoEpoch_ex1.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_NeoEpoch_ex1.py" afterPath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_NeoEpoch_ex1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_neoAll_ex2.ipynb" afterPath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_neoAll_ex2.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_neoAll_ex2.py" afterPath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_neoAll_ex2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_neoAll_ex3.ipynb" afterPath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_neoAll_ex3.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_neoAll_ex3.py" afterPath="$PROJECT_DIR$/doc/_build/html/_downloads/plot_neoAll_ex3.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_rst/eeg_utils.html" afterPath="$PROJECT_DIR$/doc/_build/html/_rst/eeg_utils.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_rst/neoStructures.html" afterPath="$PROJECT_DIR$/doc/_build/html/_rst/neoStructures.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_sources/auto_examples/NeoAll_examples/plot_NeoAll_ex1.rst.txt" afterPath="$PROJECT_DIR$/doc/_build/html/_sources/auto_examples/NeoAll_examples/plot_NeoAll_ex1.rst.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_sources/auto_examples/NeoAll_examples/plot_NeoAll_ex4.rst.txt" afterPath="$PROJECT_DIR$/doc/_build/html/_sources/auto_examples/NeoAll_examples/plot_NeoAll_ex4.rst.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_sources/auto_examples/NeoAll_examples/plot_NeoAll_ex5.rst.txt" afterPath="$PROJECT_DIR$/doc/_build/html/_sources/auto_examples/NeoAll_examples/plot_NeoAll_ex5.rst.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_sources/auto_examples/NeoAll_examples/plot_neoAll_ex2.rst.txt" afterPath="$PROJECT_DIR$/doc/_build/html/_sources/auto_examples/NeoAll_examples/plot_neoAll_ex2.rst.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_sources/auto_examples/NeoAll_examples/plot_neoAll_ex3.rst.txt" afterPath="$PROJECT_DIR$/doc/_build/html/_sources/auto_examples/NeoAll_examples/plot_neoAll_ex3.rst.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_sources/auto_examples/NeoEpoch_examples/create_neo_epoch.rst.txt" afterPath="$PROJECT_DIR$/doc/_build/html/_sources/auto_examples/NeoEpoch_examples/create_neo_epoch.rst.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/_sources/auto_examples/NeoEpoch_examples/plot_NeoEpoch_ex1.rst.txt" afterPath="$PROJECT_DIR$/doc/_build/html/_sources/auto_examples/NeoEpoch_examples/plot_NeoEpoch_ex1.rst.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/auto_examples/NeoAll_examples/plot_NeoAll_ex1.html" afterPath="$PROJECT_DIR$/doc/_build/html/auto_examples/NeoAll_examples/plot_NeoAll_ex1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/auto_examples/NeoAll_examples/plot_NeoAll_ex4.html" afterPath="$PROJECT_DIR$/doc/_build/html/auto_examples/NeoAll_examples/plot_NeoAll_ex4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/auto_examples/NeoAll_examples/plot_NeoAll_ex5.html" afterPath="$PROJECT_DIR$/doc/_build/html/auto_examples/NeoAll_examples/plot_NeoAll_ex5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/auto_examples/NeoAll_examples/plot_neoAll_ex2.html" afterPath="$PROJECT_DIR$/doc/_build/html/auto_examples/NeoAll_examples/plot_neoAll_ex2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/auto_examples/NeoAll_examples/plot_neoAll_ex3.html" afterPath="$PROJECT_DIR$/doc/_build/html/auto_examples/NeoAll_examples/plot_neoAll_ex3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/auto_examples/NeoEpoch_examples/create_neo_epoch.html" afterPath="$PROJECT_DIR$/doc/_build/html/auto_examples/NeoEpoch_examples/create_neo_epoch.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/auto_examples/NeoEpoch_examples/plot_NeoEpoch_ex1.html" afterPath="$PROJECT_DIR$/doc/_build/html/auto_examples/NeoEpoch_examples/plot_NeoEpoch_ex1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/auto_examples/index.html" afterPath="$PROJECT_DIR$/doc/_build/html/auto_examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/genindex.html" afterPath="$PROJECT_DIR$/doc/_build/html/genindex.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/_build/html/searchindex.js" afterPath="$PROJECT_DIR$/doc/_build/html/searchindex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex1.ipynb" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex1.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex1.py" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex1.py.md5" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex1.py.md5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex1.rst" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex1.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex4.ipynb" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex4.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex4.py" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex4.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex4.rst" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex4.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex5.ipynb" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex5.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex5.py" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex5.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex5.py.md5" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex5.py.md5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex5.rst" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_NeoAll_ex5.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_neoAll_ex2.ipynb" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_neoAll_ex2.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_neoAll_ex2.py" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_neoAll_ex2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_neoAll_ex2.py.md5" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_neoAll_ex2.py.md5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_neoAll_ex2.rst" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_neoAll_ex2.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_neoAll_ex3.ipynb" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_neoAll_ex3.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_neoAll_ex3.py" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_neoAll_ex3.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_neoAll_ex3.py.md5" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_neoAll_ex3.py.md5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_neoAll_ex3.rst" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoAll_examples/plot_neoAll_ex3.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoEpoch_examples/create_neo_epoch.ipynb" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoEpoch_examples/create_neo_epoch.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoEpoch_examples/create_neo_epoch.py" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoEpoch_examples/create_neo_epoch.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoEpoch_examples/create_neo_epoch.rst" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoEpoch_examples/create_neo_epoch.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoEpoch_examples/plot_NeoEpoch_ex1.ipynb" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoEpoch_examples/plot_NeoEpoch_ex1.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoEpoch_examples/plot_NeoEpoch_ex1.py" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoEpoch_examples/plot_NeoEpoch_ex1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoEpoch_examples/plot_NeoEpoch_ex1.py.md5" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoEpoch_examples/plot_NeoEpoch_ex1.py.md5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/auto_examples/NeoEpoch_examples/plot_NeoEpoch_ex1.rst" afterPath="$PROJECT_DIR$/doc/auto_examples/NeoEpoch_examples/plot_NeoEpoch_ex1.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/conf.py" afterPath="$PROJECT_DIR$/doc/conf.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/NeoAll_examples/plot_NeoAll_ex1.py" afterPath="$PROJECT_DIR$/examples/NeoAll_examples/plot_NeoAll_ex1.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pySpikeAnalysis/neoStructures.py" afterPath="$PROJECT_DIR$/pySpikeAnalysis/neoStructures.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -140,8 +17,8 @@
       <file leaf-file-name="neoStructures.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pySpikeAnalysis/neoStructures.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="951" column="35" lean-forward="true" selection-start-line="951" selection-start-column="35" selection-end-line="951" selection-end-column="35" />
+            <state relative-caret-position="357">
+              <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -182,7 +59,7 @@
       <file leaf-file-name="plot_NeoAll_ex1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/NeoAll_examples/plot_NeoAll_ex1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
+            <state relative-caret-position="492">
               <caret line="52" column="30" lean-forward="false" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
               <folding>
                 <element signature="e#1623#1650#0" expanded="true" />
@@ -214,9 +91,11 @@
       <file leaf-file-name="plot_neoAll_ex2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/NeoAll_examples/plot_neoAll_ex2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="37" column="20" lean-forward="false" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="189">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="e#552#579#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -224,7 +103,7 @@
       <file leaf-file-name="plot_neoAll_ex3.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/NeoAll_examples/plot_neoAll_ex3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
+            <state relative-caret-position="245">
               <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding />
             </state>
@@ -414,6 +293,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="pySpikeAnalysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pySpikeAnalysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pySpikeAnalysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="examples" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -433,20 +326,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="NeoAll_examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pySpikeAnalysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pySpikeAnalysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -640,6 +519,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1659" y="112" width="1539" height="1101" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18999323" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879376" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -648,7 +528,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938644" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28482974" sideWeight="0.47689465" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19269776" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27347782" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27347782" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -875,14 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/NeoAll_examples/plot_neoAll_ex3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/NeoAll_examples/plot_NeoAll_ex4.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -925,24 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/NeoAll_examples/plot_NeoAll_ex1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="52" column="30" lean-forward="false" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
-          <folding>
-            <element signature="e#1623#1650#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/NeoAll_examples/plot_neoAll_ex2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="37" column="20" lean-forward="false" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doc/conf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -953,10 +807,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/examples/NeoAll_examples/plot_NeoAll_ex1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="52" column="30" lean-forward="false" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+          <folding>
+            <element signature="e#1623#1650#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/NeoAll_examples/plot_neoAll_ex2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#552#579#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/NeoAll_examples/plot_neoAll_ex3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pySpikeAnalysis/neoStructures.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="951" column="35" lean-forward="true" selection-start-line="951" selection-start-column="35" selection-end-line="951" selection-end-column="35" />
+        <state relative-caret-position="357">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
           <folding />
         </state>
       </provider>
