@@ -8,3 +8,5 @@ neo
 mne
 elephant
 tqdm
+sphinx_bootstrap_theme
+numpydoc
