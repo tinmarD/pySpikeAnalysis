@@ -23,6 +23,7 @@ print(sys.version)
 data_dir = join('pySpikeAnalysis', 'sample_data') if isdir('pySpikeAnalysis') else join('..', '..', 'pySpikeAnalysis', 'sample_data')
 neo_epoch_filename = r'neoepoch_071118_1132.p'
 with open(join(data_dir, neo_epoch_filename), 'rb') as f:
+    print(f)
     neo_epoch = pickle.load(f)
 
 neo_epoch.save_fig = 0
