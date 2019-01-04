@@ -13,7 +13,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from os.path import isdir, join
 import seaborn as sns
-import _pickle
+import pickle
 sns.set()
 sns.set_context('paper')
 
@@ -22,7 +22,7 @@ sns.set_context('paper')
 data_dir = join('pySpikeAnalysis', 'sample_data') if isdir('pySpikeAnalysis') else join('..', '..', 'pySpikeAnalysis', 'sample_data')
 neo_all_filename = r'neoall_071118_1132.p'
 with open(join(data_dir, neo_all_filename), 'rb') as f:
-    neoAll = _pickle.load(f)
+    neoAll = pickle.load(f)
 
 ################################
 # See information about NeoAll :

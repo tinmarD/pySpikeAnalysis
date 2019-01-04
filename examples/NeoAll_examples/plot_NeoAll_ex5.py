@@ -35,6 +35,7 @@ print(neoAll.channel_indexes)
 
 ################################
 # We can see that the first groups or ChannelIndex correpond to individual tetrodes and that the last groups
+# We can see that the first groups or ChannelIndex correpond to individual tetrodes and that the last groups
 # correpond to the entire electrode (i.e. group of 2 or 3 tetrodes)
 
 #################################
