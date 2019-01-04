@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Overview &#8212; Spike Analysis 0 documentation</title>
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/gallery.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/my-styles.css" type="text/css" />
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Spike Analysis</a>
+        <span class="navbar-text navbar-version pull-left"><b>0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="#">Overview</a></li>
+                <li><a href="modules.html">API</a></li>
+                <li><a href="../auto_examples/index.html">Examples</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">pySpikeAnalysis</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../auto_examples/index.html">General Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../auto_examples/index.html#neo-all-example">Neo All example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../auto_examples/index.html#neo-epoch-examples">Neo Epoch examples</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/_rst/core_structures.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">Overview</a><ul>
+<li><a class="reference internal" href="#the-neo-package">The Neo package</a></li>
+<li><a class="reference internal" href="#neoall-and-neo-epoch">NeoAll and Neo Epoch</a></li>
+<li><a class="reference internal" href="#possible-analyses">Possible analyses</a></li>
+</ul>
+</li>
+</ul>
+
+<div id="sourcelink">
+  <a href="../_sources/_rst/core_structures.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
+<p><em>pySpikeAnalysis</em> takes as input the Spike Sorting results and allow their analysis.
+Currently only results from <a class="reference external" href="https://spyking-circus.readthedocs.io/en/latest/">SpyKING CIRCUS</a> are handled.</p>
+<div class="section" id="the-neo-package">
+<h2>The Neo package<a class="headerlink" href="#the-neo-package" title="Permalink to this headline">¶</a></h2>
+<p>The goal of <a class="reference external" href="https://neo.readthedocs.io/en/0.6/index.html">Neo</a> is to improve interoperability between Python tools for
+analyzing, visualizing and generating electrophysiology data, by providing a common, shared object model.
+In order to be as lightweight a dependency as possible, Neo is deliberately limited
+to represention of data, with no functions for data analysis or visualization.</p>
+<p>The Neo data model is the following :</p>
+<a class="reference internal image-reference" href="../_images/neo_base_schematic.png"><img alt="../_images/neo_base_schematic.png" src="../_images/neo_base_schematic.png" style="width: 590.4px; height: 514.4px;" /></a>
+</div>
+<div class="section" id="neoall-and-neo-epoch">
+<h2>NeoAll and Neo Epoch<a class="headerlink" href="#neoall-and-neo-epoch" title="Permalink to this headline">¶</a></h2>
+<p><em>pySpikeAnalysis</em> works with two main classes based on Neo : NeoAll and NeoEpoch.</p>
+<p>NeoAll represents the spike sorting results from an entire file.
+NeoEpoch allows to create epochs based on events such as stimuli onset, epileptic events, …</p>
+<p>While NeoAll allows to have a global view of the spiking activty across the whole file, NeoEpoch is useful
+for analysis the behaviour of the different units in regard to certain events.</p>
+<a class="reference internal image-reference" href="../_images/neoall.png"><img alt="../_images/neoall.png" src="../_images/neoall.png" style="width: 660.0px; height: 510.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/neoepoch.png"><img alt="../_images/neoepoch.png" src="../_images/neoepoch.png" style="width: 660.0px; height: 510.0px;" /></a>
+</div>
+<div class="section" id="possible-analyses">
+<h2>Possible analyses<a class="headerlink" href="#possible-analyses" title="Permalink to this headline">¶</a></h2>
+<p><em>pySpikeAnalysis</em> allows to run different analyses, summarized in the next image :</p>
+<a class="reference internal image-reference" href="../_images/outputs.png"><img alt="../_images/outputs.png" src="../_images/outputs.png" style="width: 700.0px; height: 900.0px;" /></a>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2017, Martin Deudon.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

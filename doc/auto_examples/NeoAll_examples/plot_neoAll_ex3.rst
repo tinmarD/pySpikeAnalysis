@@ -1,0 +1,273 @@
+
+
+.. _sphx_glr_auto_examples_NeoAll_examples_plot_neoAll_ex3.py:
+
+
+========================================================
+    Neo All - example 3 - Density plot, unit template
+========================================================
+
+This example shows how to plot density plots of units. The original EEG file must be given, as well a csv file
+containing the time-periods that were kept for the spike-sorting (it is usual to remove artefact periods before
+doing the spike-sorting, this file allows to have access to the original time of spikes, thus allowing to plot
+the raw unit shape and to control the effect of filtering on the unit shape).
+
+
+
+
+.. code-block:: python
+
+
+    from neoStructures import *
+    import pandas as pd
+    import matplotlib.pyplot as plt
+    from os.path import isdir, join
+
+
+
+
+
+
+
+Import the data and create the NeoAll instance
+
+
+
+.. code-block:: python
+
+    data_dir = join('pySpikeAnalysis', 'sample_data') if isdir('pySpikeAnalysis') else join('..', '..', 'pySpikeAnalysis', 'sample_data_whole')
+    spykingcircus_dir = r'SpykingCircus_results'
+    probe_filename = r'000_AA.prb'
+    signal_dir = join(data_dir, r'EDF')
+    results_filename = r'spykingcircusres'
+    artefact_csv_filepath = join(data_dir, r'artefact_free_periods.csv')
+
+
+
+
+
+
+
+In comparison with the previous examples, we have added the `signal_dirpath` argument which points to the
+directory containing the data signal used for the spike-sorting.
+
+
+
+.. code-block:: python
+
+    neoAll = NeoAll(join(data_dir, spykingcircus_dir), results_filename, join(data_dir, probe_filename),
+                    signal_dirpath=signal_dir, save_fig=0)
+
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out::
+
+    Extracting edf Parameters from ..\..\pySpikeAnalysis\sample_data_whole\EDF\micro_30kHz.edf...
+    EDF file detected
+    Setting channel info structure...
+    Created Raw.info structure...
+    Ready.
+
+
+See information about NeoAll, we now have access to the number of channels and the number of electrodes.
+
+
+
+.. code-block:: python
+
+    print(neoAll)
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out::
+
+    NeoAll Instance with 54 units. 1 Neo segment per unit. Each segment contains 1 Neo spiketrain
+    14 channel indexes
+    37 channels and 37 electrodes
+
+
+Providing the artefact_csv_filepath, which must be a CSV file with 3 columns in the order 'Filename', 't_start' and
+'t_end', with a 1 row header...
+
+
+
+.. code-block:: python
+
+    df = pd.read_table(artefact_csv_filepath)
+    print(df.head())
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out::
+
+    Filename;t_start;t_end
+    0   micro_30kHz.edf;45;305
+    1  micro_30kHz.edf;327;340
+    2  micro_30kHz.edf;349;423
+    3  micro_30kHz.edf;426;625
+
+
+the method :func:`neoStructure.NeoAll.plot_raw_unit_shape` allows to have access to the raw (unfiltered)
+spike trace and to investigate the effects of filtering on the unit shape.
+
+
+
+.. code-block:: python
+
+    neoAll.plot_raw_unit_shape(34, signal_dir, artefact_csv_filepath, fn_hz=[300, 3000], plot_density_plot=False)
+
+
+
+
+.. image:: /auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex3_001.png
+    :align: center
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out::
+
+    1206 spikes in the spike train of unit temp_34
+    Extracting edf Parameters from ..\..\pySpikeAnalysis\sample_data_whole\EDF\micro_30kHz.edf...
+    EDF file detected
+    Setting channel info structure...
+    Created Raw.info structure...
+    Ready.
+
+
+Density plot can be shown :
+
+
+
+.. code-block:: python
+
+    neoAll.plot_raw_unit_shape(34, signal_dir, artefact_csv_filepath, fn_hz=[300, 3000], plot_mean_shape=False)
+
+
+
+
+.. image:: /auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex3_002.png
+    :align: center
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out::
+
+    1206 spikes in the spike train of unit temp_34
+    Extracting edf Parameters from ..\..\pySpikeAnalysis\sample_data_whole\EDF\micro_30kHz.edf...
+    EDF file detected
+    Setting channel info structure...
+    Created Raw.info structure...
+    Ready.
+
+
+It is possible to re-align the spike traces based on the extrema by setting realign to True
+
+
+
+.. code-block:: python
+
+    neoAll.plot_raw_unit_shape(34, signal_dir, artefact_csv_filepath, fn_hz=[300, 3000], realign=True, plot_density_plot=False)
+
+
+
+
+.. image:: /auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex3_003.png
+    :align: center
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out::
+
+    1206 spikes in the spike train of unit temp_34
+    Extracting edf Parameters from ..\..\pySpikeAnalysis\sample_data_whole\EDF\micro_30kHz.edf...
+    EDF file detected
+    Setting channel info structure...
+    Created Raw.info structure...
+    Ready.
+
+
+Realigned density plot :
+
+
+
+.. code-block:: python
+
+    neoAll.plot_raw_unit_shape(34, signal_dir, artefact_csv_filepath, fn_hz=[300, 3000], realign=True, plot_mean_shape=False)
+
+
+
+
+.. image:: /auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex3_004.png
+    :align: center
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out::
+
+    1206 spikes in the spike train of unit temp_34
+    Extracting edf Parameters from ..\..\pySpikeAnalysis\sample_data_whole\EDF\micro_30kHz.edf...
+    EDF file detected
+    Setting channel info structure...
+    Created Raw.info structure...
+    Ready.
+
+
+Comparison can be made with the shape obtained from Spyking-Circus results :
+
+
+
+.. code-block:: python
+
+    neoAll.plot_unit_shape(34)
+
+
+
+
+.. image:: /auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex3_005.png
+    :align: center
+
+
+
+
+**Total running time of the script:** ( 0 minutes  36.232 seconds)
+
+
+
+.. only :: html
+
+ .. container:: sphx-glr-footer
+
+
+  .. container:: sphx-glr-download
+
+     :download:`Download Python source code: plot_neoAll_ex3.py <plot_neoAll_ex3.py>`
+
+
+
+  .. container:: sphx-glr-download
+
+     :download:`Download Jupyter notebook: plot_neoAll_ex3.ipynb <plot_neoAll_ex3.ipynb>`
+
+
+.. only:: html
+
+ .. rst-class:: sphx-glr-signature
+
+    `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_

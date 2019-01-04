@@ -1,0 +1,11 @@
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+h5py
+neo
+mne
+elephant
+tqdm
+numbers

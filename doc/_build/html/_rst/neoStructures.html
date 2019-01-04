@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>neoStructures module &#8212; Spike Analysis 0 documentation</title>
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/gallery.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/my-styles.css" type="text/css" />
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="eeg_utils module" href="eeg_utils.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Spike Analysis</a>
+        <span class="navbar-text navbar-version pull-left"><b>0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="core_structures.html">Overview</a></li>
+                <li><a href="modules.html">API</a></li>
+                <li><a href="../auto_examples/index.html">Examples</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">pySpikeAnalysis</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../auto_examples/index.html">General Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../auto_examples/index.html#neo-all-example">Neo All example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../auto_examples/index.html#neo-epoch-examples">Neo Epoch examples</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/_rst/neoStructures.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">neoStructures module</a><ul>
+</ul>
+</li>
+</ul>
+
+  <li>
+    <a href="eeg_utils.html" title="Previous Chapter: eeg_utils module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; eeg_utils module</span>
+    </a>
+  </li>
+<div id="sourcelink">
+  <a href="../_sources/_rst/neoStructures.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="module-neoStructures">
+<span id="neostructures-module"></span><h1>neoStructures module<a class="headerlink" href="#module-neoStructures" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="neoStructures.NeoAll">
+<em class="property">class </em><code class="descclassname">neoStructures.</code><code class="descname">NeoAll</code><span class="sig-paren">(</span><em>spikesorting_dirpath</em>, <em>spikesorting_filename</em>, <em>probe_filepath</em>, <em>signal_dirpath=[]</em>, <em>event_filepath=[]</em>, <em>event_csv_sep=';'</em>, <em>fig_dirpath=[]</em>, <em>save_fig=0</em>, <em>srate=30000</em>, <em>t_max=-1</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contain spike sorting data from Spyking-Circus results file. Create one Neo Segment per unit.</p>
+<dl class="docutils">
+<dt>spikesorting_dirpath <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Path of the directory containng the spyking circus result file</dd>
+<dt>spikesorting_filename <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Name of the Spiking Circus result file</dd>
+<dt>probe_filepath <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Path to the Spiking Circus probe file</dd>
+<dt>signal_dirpath :str | none (default)</dt>
+<dd>Path of the directory containing the LFP signals files (must be in EDF format)</dd>
+<dt>event_filepath <span class="classifier-delimiter">:</span> <span class="classifier">str | none (default)</span></dt>
+<dd>Path to the event file</dd>
+<dt>event_csv_sep <span class="classifier-delimiter">:</span> <span class="classifier">str (default ‘;’)</span></dt>
+<dd>Separator used in the event file</dd>
+<dt>fig_dirpath <span class="classifier-delimiter">:</span> <span class="classifier">str | none (default)</span></dt>
+<dd>Path to the directory where figures will be saved. If none and save_fig is true, then save the figures in the
+current directory.</dd>
+<dt>save_fig <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>If True, save the figures</dd>
+<dt>srate <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd>Sampling rate (Hz)</dd>
+<dt>t_max <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd>Maximum time of spike. If not provided will be computed from the spiketrains.</dd>
+<dt>n_units <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd>Number of units</dd>
+<dt>unit_names <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd>Name of each unit</dd>
+<dt>unit_shapes <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd>Shape/Template of each unit</dd>
+<dt>unit_preferred_chan <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd>Preferred channel for each unit</dd>
+<dt>channel_names <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd>Name of the channels of the LFP files</dd>
+<dt>electrode_names <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd>Name of the electrode for each channel</dd>
+<dt>electrode_names_unique <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd>Unique electrode names</dd>
+<dt>fig_dirpath <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>Path where the figure are saved</dd>
+<dt>segments <span class="classifier-delimiter">:</span> <span class="classifier">List of Neo Segments</span></dt>
+<dd>Neo Segment, 1 per unit</dd>
+<dt>channel_indexes <span class="classifier-delimiter">:</span> <span class="classifier">Neo ChannelIndex</span></dt>
+<dd>Neo ChannelIndex, 1 per tetrode</dd>
+<dt>signal_provided <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>True if LFP signal was provided, False otherwise</dd>
+</dl>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#neoStructures.NeoAll.channelpos2elec" title="neoStructures.NeoAll.channelpos2elec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channelpos2elec</span></code></a>(channel_pos)</td>
+<td>From the channel (micro-wire) position, return the corresponding electrode’s number and name</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#neoStructures.NeoAll.channelpos2tetrode" title="neoStructures.NeoAll.channelpos2tetrode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channelpos2tetrode</span></code></a>(channel_pos)</td>
+<td>From the channel (micro-wire) position, return the information about the tetrode of this channel</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#neoStructures.NeoAll.create_epochs_around_events" title="neoStructures.NeoAll.create_epochs_around_events"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_epochs_around_events</span></code></a>(event_name,&nbsp;…)</td>
+<td>Create Neo Epochs objects around events specified by event name.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#neoStructures.NeoAll.create_event_list" title="neoStructures.NeoAll.create_event_list"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_event_list</span></code></a>(event_times,&nbsp;event_names)</td>
+<td>Create Neo Event objects for each event specified by event_times and event_names.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#neoStructures.NeoAll.elecnum2channelpos" title="neoStructures.NeoAll.elecnum2channelpos"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elecnum2channelpos</span></code></a>(elec_num)</td>
+<td>From the electrode’s number return the electrode’s channels position and name</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#neoStructures.NeoAll.get_spikerate_change_ratio_on_epochs" title="neoStructures.NeoAll.get_spikerate_change_ratio_on_epochs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_spikerate_change_ratio_on_epochs</span></code></a>(…)</td>
+<td>Compute the mean spikerate on all target and reference epochs, calcul the ratio of these two, for each unit</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#neoStructures.NeoAll.getunitpreferredchannelname" title="neoStructures.NeoAll.getunitpreferredchannelname"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getunitpreferredchannelname</span></code></a>(unit_name)</td>
+<td>Get the preferred channel of a unit from the unit’s name</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#neoStructures.NeoAll.plot_crosscorrelogram" title="neoStructures.NeoAll.plot_crosscorrelogram"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_crosscorrelogram</span></code></a>(unit_pos_a,&nbsp;unit_pos_b)</td>
+<td>Plot the cross-correlogram between spiketrains of units specified by <code class="docutils literal notranslate"><span class="pre">unit_pos_a</span></code> and <code class="docutils literal notranslate"><span class="pre">unit_pos_b</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#neoStructures.NeoAll.plot_isi" title="neoStructures.NeoAll.plot_isi"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_isi</span></code></a>([unit_pos,&nbsp;bin_duration_ms,&nbsp;…])</td>
+<td>Plot the Inter-Spike Intervals histogram for unit specified by unit_pos</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#neoStructures.NeoAll.plot_raw_unit_shape" title="neoStructures.NeoAll.plot_raw_unit_shape"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_raw_unit_shape</span></code></a>(unit_pos,&nbsp;…[,&nbsp;sep,&nbsp;…])</td>
+<td>Get the raw signal of each action potential for the unit specified by <code class="docutils literal notranslate"><span class="pre">unit_pos</span></code>.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#neoStructures.NeoAll.plot_spikerate_change_ratio_on_epochs" title="neoStructures.NeoAll.plot_spikerate_change_ratio_on_epochs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_spikerate_change_ratio_on_epochs</span></code></a>(…[,&nbsp;…])</td>
+<td>Plot the mean spikerate ratio between 2 epochs.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#neoStructures.NeoAll.plot_spikerate_evolution" title="neoStructures.NeoAll.plot_spikerate_evolution"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_spikerate_evolution</span></code></a>([unit_pos,&nbsp;…])</td>
+<td>Plot the spikerate evolution across all the segment duration for units specified by unit_pos</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#neoStructures.NeoAll.plot_spikerate_evolution_group" title="neoStructures.NeoAll.plot_spikerate_evolution_group"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_spikerate_evolution_group</span></code></a>(grp_index[,&nbsp;…])</td>
+<td>Plot the spike rate evolution across all the length of the segment of all units of the channel index specified by grp_index.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#neoStructures.NeoAll.plot_unit_shape" title="neoStructures.NeoAll.plot_unit_shape"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_unit_shape</span></code></a>([unit_pos,&nbsp;plot_mean])</td>
+<td>Plot the shape of unit specified by unit_pos</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#neoStructures.NeoAll.read_event_file" title="neoStructures.NeoAll.read_event_file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_event_file</span></code></a>(event_filepath[,&nbsp;event_csv_sep])</td>
+<td>Read the event file, specified by <cite>event_filepath</cite> and add the event to each segments using the <a class="reference internal" href="#neoStructures.NeoAll.create_event_list" title="neoStructures.NeoAll.create_event_list"><code class="xref py py-func docutils literal notranslate"><span class="pre">neoStructures.NeoAll.create_event_list()</span></code></a> method.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#neoStructures.NeoAll.reject_spikes_around_events" title="neoStructures.NeoAll.reject_spikes_around_events"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reject_spikes_around_events</span></code></a>(event_name,&nbsp;…)</td>
+<td>Reject spikes around events specified by <code class="docutils literal notranslate"><span class="pre">event_name</span></code>.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#neoStructures.NeoAll.save" title="neoStructures.NeoAll.save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code></a>(dirpath[,&nbsp;filename])</td>
+<td>Save the instance as a pickle (.p) file The filename is appended with the currendt date and time</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#neoStructures.NeoAll.subfun_plot_unit_shape" title="neoStructures.NeoAll.subfun_plot_unit_shape"><code class="xref py py-obj docutils literal notranslate"><span class="pre">subfun_plot_unit_shape</span></code></a>(unit_pos[,&nbsp;…])</td>
+<td>Sub-routine for plotting shape of the unit</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="neoStructures.NeoAll.channelpos2elec">
+<code class="descname">channelpos2elec</code><span class="sig-paren">(</span><em>channel_pos</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.channelpos2elec" title="Permalink to this definition">¶</a></dt>
+<dd><p>From the channel (micro-wire) position, return the corresponding electrode’s number and name</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>channel_pos</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Channel’s (micro-wire) position</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>el_num</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><blockquote class="first">
+<div><p>Corresponding electrode’s number</p>
+</div></blockquote>
+<dl class="last docutils">
+<dt>el_name <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Corresponding electrode’s name</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoAll.channelpos2tetrode">
+<code class="descname">channelpos2tetrode</code><span class="sig-paren">(</span><em>channel_pos</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.channelpos2tetrode" title="Permalink to this definition">¶</a></dt>
+<dd><p>From the channel (micro-wire) position, return the information about the tetrode of this channel</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>channel_pos</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Channel’s (micro-wire) position</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>tetrode_num</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Corresponding tetrode number</p>
+</dd>
+<dt><strong>tetrode_channels_pos</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd><p class="first last">Position of the 4 channels of the tetrode</p>
+</dd>
+<dt><strong>wire_num_in_tetrode</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Position of the input channel in the tetrode (between 0 and 3)</p>
+</dd>
+<dt><strong>tetrode_channels_pos_glob</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd><p class="first last">??? same as tetrode_channels_pos ???</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoAll.create_epochs_around_events">
+<code class="descname">create_epochs_around_events</code><span class="sig-paren">(</span><em>event_name</em>, <em>time_offset</em>, <em>epoch_duration</em>, <em>epoch_names</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.create_epochs_around_events" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Neo Epochs objects around events specified by event name. The epoch times start at the event time
+plus an possible offset time_offset, the duration is specified by epoch_duration.
+Epochs are added to all segments</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>event_name</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Event name from where to create epochs</p>
+</dd>
+<dt><strong>time_offset</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Time offset from the event time</p>
+</dd>
+<dt><strong>epoch_duration</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Duration of the epoch</p>
+</dd>
+<dt><strong>epoch_names</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Name of the epoch</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoAll.create_event_list">
+<code class="descname">create_event_list</code><span class="sig-paren">(</span><em>event_times</em>, <em>event_names</em>, <em>segment_pos=-1</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.create_event_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Neo Event objects for each event specified by event_times and event_names. Add these events to all
+segments specified by segment_pos</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>event_times</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd><p class="first last">Time of each event (s)</p>
+</dd>
+<dt><strong>event_names</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd><p class="first last">Name of each event</p>
+</dd>
+<dt><strong>segment_pos</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int | array</span></dt>
+<dd><p class="first last">Position of the segments in which events must be added</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoAll.elecnum2channelpos">
+<code class="descname">elecnum2channelpos</code><span class="sig-paren">(</span><em>elec_num</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.elecnum2channelpos" title="Permalink to this definition">¶</a></dt>
+<dd><p>From the electrode’s number return the electrode’s channels position and name</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>elec_num</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Electrode position</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>channel_pos</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd><p class="first last">Position of the input electrode’s channels</p>
+</dd>
+<dt><strong>channel_names</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd><p class="first last">Name of the input electrode’s channels</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoAll.get_spikerate_change_ratio_on_epochs">
+<code class="descname">get_spikerate_change_ratio_on_epochs</code><span class="sig-paren">(</span><em>epoch_name_target</em>, <em>epoch_name_ref</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.get_spikerate_change_ratio_on_epochs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the mean spikerate on all target and reference epochs, calcul the ratio of these two, for each unit</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>epoch_name_target</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Name of the target epochs</p>
+</dd>
+<dt><strong>epoch_name_ref</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Name of the reference epochs</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>spikerate_ratio</strong> <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd></dd>
+<dt><strong>spikerate_target</strong> <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd></dd>
+<dt><strong>spikerate_ref</strong> <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoAll.getunitpreferredchannelname">
+<code class="descname">getunitpreferredchannelname</code><span class="sig-paren">(</span><em>unit_name</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.getunitpreferredchannelname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the preferred channel of a unit from the unit’s name</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>unit_name</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Name of the unit</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>channel_name</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Name of the preferred channel (micro-wire) of the input unit</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoAll.plot_crosscorrelogram">
+<code class="descname">plot_crosscorrelogram</code><span class="sig-paren">(</span><em>unit_pos_a</em>, <em>unit_pos_b</em>, <em>bin_time=array(1.) * ms</em>, <em>max_lag_time=array(80.) * ms</em>, <em>smooth_time=array(10.) * ms</em>, <em>merge_plots=0</em>, <em>same_yscale=0</em>, <em>fill_under_plot=0</em>, <em>do_stat=0</em>, <em>n_surrogates=100</em>, <em>normal_dist_sd=array(10.) * ms</em>, <em>do_plot=1</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.plot_crosscorrelogram" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the cross-correlogram between spiketrains of units specified by <code class="docutils literal notranslate"><span class="pre">unit_pos_a</span></code> and <code class="docutils literal notranslate"><span class="pre">unit_pos_b</span></code></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>unit_pos_a</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Position of first unit</p>
+</dd>
+<dt><strong>unit_pos_b</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Position of second unit</p>
+</dd>
+<dt><strong>bin_time</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float | duration quantity (default: 1*ms)</span></dt>
+<dd><p class="first last">Bin duration (in ms)</p>
+</dd>
+<dt><strong>max_lag_time</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float | duration quantity (default: 80*ms)</span></dt>
+<dd><p class="first last">Maximal lag time (in ms)</p>
+</dd>
+<dt><strong>smooth_time</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float | duration quantity (default: 10*ms)</span></dt>
+<dd><p class="first last">Smoothing time (in ms)</p>
+</dd>
+<dt><strong>merge_plots</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: False)</span></dt>
+<dd><p class="first last">If True, merge all the cross-correlogram in one figure</p>
+</dd>
+<dt><strong>same_yscale</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: False)</span></dt>
+<dd><p class="first last">If True, the y-axis limits are the same</p>
+</dd>
+<dt><strong>fill_under_plot</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: False)</span></dt>
+<dd><p class="first last">If True, fill the area under the plot</p>
+</dd>
+<dt><strong>do_stat</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: False)</span></dt>
+<dd><p class="first last">If True, do some wrong statistics</p>
+</dd>
+<dt><strong>n_surrogates</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int (default: 100)</span></dt>
+<dd><p class="first last">Number of jittered spike-trains when doing the wrong stats</p>
+</dd>
+<dt><strong>normal_dist_sd</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float | duration quantity (default: 50*ms)</span></dt>
+<dd><p class="first last">Parameter for the stats</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>cch</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd><p class="first last">Cross-correlation histogram between the spike-trains of input units</p>
+</dd>
+<dt><strong>bins</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd><p class="first last">Contains the IDs of the individual histogram bins</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoAll.plot_isi">
+<code class="descname">plot_isi</code><span class="sig-paren">(</span><em>unit_pos=-1</em>, <em>bin_duration_ms=1</em>, <em>tmax_ms=100</em>, <em>logscale=0</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.plot_isi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the Inter-Spike Intervals histogram for unit specified by unit_pos</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>unit_pos</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Unit position</p>
+</dd>
+<dt><strong>bin_duration_ms</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float (default: 1)</span></dt>
+<dd><p class="first last">Bin duration for the histogram in ms</p>
+</dd>
+<dt><strong>tmax_ms</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float (default: 100)</span></dt>
+<dd><p class="first last">Maximal time interval</p>
+</dd>
+<dt><strong>logscale</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">If True, the scale of the x-axis is logarithmic</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoAll.plot_raw_unit_shape">
+<code class="descname">plot_raw_unit_shape</code><span class="sig-paren">(</span><em>unit_pos, signal_dirpath, artefact_free_periods_filepath, sep=';', fir_order=400, iir_type='bessel', iir_order=2, fn_hz=[300, 3000], half_duration=0.0018, realign=False, plot_mean_shape=True, plot_density_plot=True</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.plot_raw_unit_shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the raw signal of each action potential for the unit specified by <code class="docutils literal notranslate"><span class="pre">unit_pos</span></code>.
+This allows to investigate the filtering effects on the shape of the unit.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>unit_pos</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Unit’s position</p>
+</dd>
+<dt><strong>signal_dirpath</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Path to the directory containing the EEG files</p>
+</dd>
+<dt><strong>artefact_free_periods_filepath</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Path to the file containing the periods free of artefacts. Must be a CSV file with 3 columns in the order
+{‘Filename’, ‘t_start’, ‘t_end’}, with a 1 row header.</p>
+</dd>
+<dt><strong>sep</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str (default: ‘;’)</span></dt>
+<dd><p class="first last">CSV separator</p>
+</dd>
+<dt><strong>fir_order</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int (default</span></dt>
+<dd><p class="first last">FIR filter order</p>
+</dd>
+<dt><strong>iir_type</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str (default: ‘bessel’)</span></dt>
+<dd><p class="first last">IIR filter type - can be ‘bessel’, ‘butter’</p>
+</dd>
+<dt><strong>iir_order</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int (default</span></dt>
+<dd><p class="first last">IIR filter order</p>
+</dd>
+<dt><strong>fn_hz</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float | array</span></dt>
+<dd><p class="first last">Cut-off frequency in Hertz. If a scalar, filter will be a high-pass. If contains 2 frequencies, filter
+will be a band-pass filter. Default : [300, 3000]</p>
+</dd>
+<dt><strong>half_duration</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float (default</span></dt>
+<dd><p class="first last">Half-duration of the observed spikes</p>
+</dd>
+<dt><strong>realign</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default</span></dt>
+<dd><p class="first last">If true, tries to realign the spike traces based on the extremum.</p>
+</dd>
+<dt><strong>plot_mean_shape</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default</span></dt>
+<dd><p class="first last">If true, plot the mean unit shape</p>
+</dd>
+<dt><strong>plot_density_plot</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default</span></dt>
+<dd><p class="first last">If true, plot the density plot</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoAll.plot_spikerate_change_ratio_on_epochs">
+<code class="descname">plot_spikerate_change_ratio_on_epochs</code><span class="sig-paren">(</span><em>epoch_name_target</em>, <em>epoch_name_ref</em>, <em>plot_ratio_only=0</em>, <em>single_plot=1</em>, <em>merge_plot=0</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.plot_spikerate_change_ratio_on_epochs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the mean spikerate ratio between 2 epochs. Call the method get_spikerate_change_ratio_on_epochs.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>epoch_name_target</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Name of the target epochs</p>
+</dd>
+<dt><strong>epoch_name_ref</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Name of the reference epochs</p>
+</dd>
+<dt><strong>plot_ratio_only</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: False)</span></dt>
+<dd><p class="first last">If True, plot only the ratio and not the target and reference spiking rate</p>
+</dd>
+<dt><strong>single_plot</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: True)</span></dt>
+<dd><p class="first last">If True, plot individual figures</p>
+</dd>
+<dt><strong>merge_plot</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: False)</span></dt>
+<dd><p class="first last">If True, merge the figures</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>spikerate_ratio</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoAll.plot_spikerate_evolution">
+<code class="descname">plot_spikerate_evolution</code><span class="sig-paren">(</span><em>unit_pos=-1</em>, <em>sigma_gauss_kernel=array(30.) * s</em>, <em>merge_plots=0</em>, <em>norm_spikerate=0</em>, <em>plot_events=1</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.plot_spikerate_evolution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the spikerate evolution across all the segment duration for units specified by unit_pos</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>unit_pos</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int (default: -1)</span></dt>
+<dd><p class="first last">Position of the unit. If equal to -1</p>
+</dd>
+<dt><strong>sigma_gauss_kernel</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float | duration quantity (default: 150s)</span></dt>
+<dd><p class="first last">Duration of the smoothing gaussian kernel</p>
+</dd>
+<dt><strong>merge_plots</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: False)</span></dt>
+<dd><p class="first last">If True, merge the plots</p>
+</dd>
+<dt><strong>norm_spikerate</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: False)</span></dt>
+<dd><p class="first last">If True, normalize the spiking rate between 0 and 1</p>
+</dd>
+<dt><strong>plot_events</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: True)</span></dt>
+<dd><p class="first last">If True, plot a vertical line for each event</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoAll.plot_spikerate_evolution_group">
+<code class="descname">plot_spikerate_evolution_group</code><span class="sig-paren">(</span><em>grp_index</em>, <em>sigma_gauss_kernel=array(30.) * s</em>, <em>merge_plots=0</em>, <em>norm_spikerate=0</em>, <em>mean_plot=0</em>, <em>plot_events=1</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.plot_spikerate_evolution_group" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the spike rate evolution across all the length of the segment of all units of the channel index
+specified by grp_index. The spike rate is computed using the Elephant module</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>grp_index</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int | str</span></dt>
+<dd><p class="first last">Either the position of the channel index, or its name</p>
+</dd>
+<dt><strong>sigma_gauss_kernel</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float | duration quantity (default: 100*s)</span></dt>
+<dd><p class="first last">Time of the smoothing gaussian kernel</p>
+</dd>
+<dt><strong>merge_plots</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: False)</span></dt>
+<dd><p class="first last">If True, merge the plots</p>
+</dd>
+<dt><strong>norm_spikerate</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: False)</span></dt>
+<dd><p class="first last">If True, normalize the spiking rate between 0 and 1</p>
+</dd>
+<dt><strong>mean_plot</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: False)</span></dt>
+<dd><p class="first last">If True, only the mean spikerate across all units of the group/channel_index is plot</p>
+</dd>
+<dt><strong>plot_events</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: True)</span></dt>
+<dd><p class="first last">If True, plot a vertical line for each event</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoAll.plot_unit_shape">
+<code class="descname">plot_unit_shape</code><span class="sig-paren">(</span><em>unit_pos=-1</em>, <em>plot_mean=0</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.plot_unit_shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the shape of unit specified by unit_pos</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>unit_pos</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Position of the unit</p>
+</dd>
+<dt><strong>plot_mean</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">If True, plot the mean of all tetrode templates/shapes</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoAll.read_event_file">
+<code class="descname">read_event_file</code><span class="sig-paren">(</span><em>event_filepath</em>, <em>event_csv_sep=';'</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.read_event_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the event file, specified by <cite>event_filepath</cite> and add the event to each segments using the
+<a class="reference internal" href="#neoStructures.NeoAll.create_event_list" title="neoStructures.NeoAll.create_event_list"><code class="xref py py-func docutils literal notranslate"><span class="pre">neoStructures.NeoAll.create_event_list()</span></code></a> method. This can be done directly when instanciating the
+NeoAll instance by providin the <cite>event_filepath</cite> parameter or by calling this function.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>event_filepath</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Path to the event file</p>
+</dd>
+<dt><strong>event_csv_sep</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">CSV file separator (default: ‘;’)</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoAll.reject_spikes_around_events">
+<code class="descname">reject_spikes_around_events</code><span class="sig-paren">(</span><em>event_name</em>, <em>time_pre</em>, <em>time_post</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.reject_spikes_around_events" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reject spikes around events specified by <code class="docutils literal notranslate"><span class="pre">event_name</span></code>.
+All spikes occuring in the window [t_event-time_pre &lt; t &lt; t_event+time_post] will be rejected, for each event.
+Modify the spiketrains of the segments in which an event is defined.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>event_name</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Name of the events to select</p>
+</dd>
+<dt><strong>time_pre</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Beginning of the window, relative to the event time</p>
+</dd>
+<dt><strong>time_post</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">End of the window, relative to the event time</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoAll.save">
+<code class="descname">save</code><span class="sig-paren">(</span><em>dirpath</em>, <em>filename=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the instance as a pickle (.p) file
+The filename is appended with the currendt date and time</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>dirpath</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Directory path</p>
+</dd>
+<dt><strong>filename</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str | None</span></dt>
+<dd><p class="first last">Output filename. If none is ‘neoall_{currentdate}.p’</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoAll.subfun_plot_unit_shape">
+<code class="descname">subfun_plot_unit_shape</code><span class="sig-paren">(</span><em>unit_pos</em>, <em>plot_mean=0</em>, <em>ax=[]</em>, <em>raster_plot_call=0</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoAll.subfun_plot_unit_shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sub-routine for plotting shape of the unit</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>unit_pos</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Unit’s position</p>
+</dd>
+<dt><strong>plot_mean</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: False)</span></dt>
+<dd><p class="first last">If True, plot the mean of the unit’s shape over the 4 micro-wires of the tetrode</p>
+</dd>
+<dt><strong>ax</strong> <span class="classifier-delimiter">:</span> <span class="classifier">axis handle | None</span></dt>
+<dd><p class="first last">If provided, plot the figure on this axis</p>
+</dd>
+<dt><strong>raster_plot_call</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: False)</span></dt>
+<dd><p class="first last">Should be true, when this method is called from the <code class="docutils literal notranslate"><span class="pre">plot_rasterplot</span></code> method</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neoStructures.NeoEpoch">
+<em class="property">class </em><code class="descclassname">neoStructures.</code><code class="descname">NeoEpoch</code><span class="sig-paren">(</span><em>neoAll</em>, <em>event_filepath</em>, <em>event_csv_sep=';'</em>, <em>time_pre=1</em>, <em>time_post=1</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoEpoch" title="Permalink to this definition">¶</a></dt>
+<dd><p>NeoEpoch instances are created from a NeoAll instance. The spiketrains contained in the NeoAll instance are
+divided into epochs from an event file. Spikes occuring around each event are kept ([<code class="docutils literal notranslate"><span class="pre">time_pre,</span> <span class="pre">``time_post</span></code>]).
+NeoEpoch contains a list of Neo Segments. Each segment represent one epoch. Each segment contains as many Neo
+SpikeTrain as there are units. Each segment also contain a Neo AnalogSignal instance representing the LFP signal
+associated with the spiketrains.</p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#neoStructures.NeoEpoch.channelpos2elec" title="neoStructures.NeoEpoch.channelpos2elec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channelpos2elec</span></code></a>(channel_pos)</td>
+<td>From the channel (micro-wire) position, return the corresponding electrode’s number and name</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#neoStructures.NeoEpoch.channelpos2tetrode" title="neoStructures.NeoEpoch.channelpos2tetrode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channelpos2tetrode</span></code></a>(channel_pos)</td>
+<td>From the channel (micro-wire) position, return the information about the tetrode of this channel</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#neoStructures.NeoEpoch.elecnum2channelpos" title="neoStructures.NeoEpoch.elecnum2channelpos"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elecnum2channelpos</span></code></a>(elec_num)</td>
+<td>From the electrode’s number return the electrode’s channels position and name</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#neoStructures.NeoEpoch.getunitpreferredchannelname" title="neoStructures.NeoEpoch.getunitpreferredchannelname"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getunitpreferredchannelname</span></code></a>(unit_name)</td>
+<td>Get the preferred channel of a unit from the unit’s name</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#neoStructures.NeoEpoch.plot_crosscorrelogram_around_events" title="neoStructures.NeoEpoch.plot_crosscorrelogram_around_events"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_crosscorrelogram_around_events</span></code></a>(…[,&nbsp;…])</td>
+<td>Plot the cross-correlogram around the events of neoEpoch.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#neoStructures.NeoEpoch.plot_rasterplot" title="neoStructures.NeoEpoch.plot_rasterplot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_rasterplot</span></code></a>([unit_pos,&nbsp;bin_duration,&nbsp;…])</td>
+<td>Plot the PSTH (peri/post stimulus time histogram) for selected units.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#neoStructures.NeoEpoch.save" title="neoStructures.NeoEpoch.save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code></a>(dirpath[,&nbsp;filename])</td>
+<td>Save the instance as a pickle (.p) file The filename is appended with the currendt date and time</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#neoStructures.NeoEpoch.subfun_plot_unit_shape" title="neoStructures.NeoEpoch.subfun_plot_unit_shape"><code class="xref py py-obj docutils literal notranslate"><span class="pre">subfun_plot_unit_shape</span></code></a>(unit_pos[,&nbsp;…])</td>
+<td>Sub-routine for plotting shape of the unit</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="neoStructures.NeoEpoch.channelpos2elec">
+<code class="descname">channelpos2elec</code><span class="sig-paren">(</span><em>channel_pos</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoEpoch.channelpos2elec" title="Permalink to this definition">¶</a></dt>
+<dd><p>From the channel (micro-wire) position, return the corresponding electrode’s number and name</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>channel_pos</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Channel’s (micro-wire) position</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>el_num</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><blockquote class="first">
+<div><p>Corresponding electrode’s number</p>
+</div></blockquote>
+<dl class="last docutils">
+<dt>el_name <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Corresponding electrode’s name</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoEpoch.channelpos2tetrode">
+<code class="descname">channelpos2tetrode</code><span class="sig-paren">(</span><em>channel_pos</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoEpoch.channelpos2tetrode" title="Permalink to this definition">¶</a></dt>
+<dd><p>From the channel (micro-wire) position, return the information about the tetrode of this channel</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>channel_pos</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Channel’s (micro-wire) position</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>tetrode_num</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Corresponding tetrode number</p>
+</dd>
+<dt><strong>tetrode_channels_pos</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd><p class="first last">Position of the 4 channels of the tetrode</p>
+</dd>
+<dt><strong>wire_num_in_tetrode</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Position of the input channel in the tetrode (between 0 and 3)</p>
+</dd>
+<dt><strong>tetrode_channels_pos_glob</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd><p class="first last">??? same as tetrode_channels_pos ???</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoEpoch.elecnum2channelpos">
+<code class="descname">elecnum2channelpos</code><span class="sig-paren">(</span><em>elec_num</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoEpoch.elecnum2channelpos" title="Permalink to this definition">¶</a></dt>
+<dd><p>From the electrode’s number return the electrode’s channels position and name</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>elec_num</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Electrode position</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>channel_pos</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd><p class="first last">Position of the input electrode’s channels</p>
+</dd>
+<dt><strong>channel_names</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd><p class="first last">Name of the input electrode’s channels</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoEpoch.getunitpreferredchannelname">
+<code class="descname">getunitpreferredchannelname</code><span class="sig-paren">(</span><em>unit_name</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoEpoch.getunitpreferredchannelname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the preferred channel of a unit from the unit’s name</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>unit_name</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Name of the unit</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>channel_name</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Name of the preferred channel (micro-wire) of the input unit</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoEpoch.plot_crosscorrelogram_around_events">
+<code class="descname">plot_crosscorrelogram_around_events</code><span class="sig-paren">(</span><em>unit_pos_a</em>, <em>unit_pos_b</em>, <em>bin_time=array(1.) * ms</em>, <em>max_lag_time=array(80.) * ms</em>, <em>n_repets=100</em>, <em>plot_superpose=1</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoEpoch.plot_crosscorrelogram_around_events" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Plot the cross-correlogram around the events of neoEpoch. Compute the shift-predictor to give a significance</dt>
+<dd>level. The shift-predictor is computed by shuffling the trials position <code class="docutils literal notranslate"><span class="pre">n_repets</span></code> times. The interval plotted
+is equal to the mean +/- 2 times the standard deviation.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>unit_pos_a</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int | array | list</span></dt>
+<dd><p class="first last">Position of first unit(s)</p>
+</dd>
+<dt><strong>unit_pos_b</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int | array | list</span></dt>
+<dd><p class="first last">Position of second unit(s)</p>
+</dd>
+<dt><strong>bin_time</strong> <span class="classifier-delimiter">:</span> <span class="classifier">time (quantity) (default: 1*ms)</span></dt>
+<dd><p class="first last">Bin duration</p>
+</dd>
+<dt><strong>max_lag_time</strong> <span class="classifier-delimiter">:</span> <span class="classifier">time (quantity) (default: 80*ms)</span></dt>
+<dd><p class="first last">Max lagging time when computing the cross-corelogram</p>
+</dd>
+<dt><strong>n_repets</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int (default: 100)</span></dt>
+<dd><p class="first last">Number of repetitions when computing the sampling distribution</p>
+</dd>
+<dt><strong>plot_superpose</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: True)</span></dt>
+<dd><p class="first last">If True, superimpose the plots</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoEpoch.plot_rasterplot">
+<code class="descname">plot_rasterplot</code><span class="sig-paren">(</span><em>unit_pos=-1</em>, <em>bin_duration=0.01</em>, <em>sigma_gauss_kernel=array(20.) * ms</em>, <em>plot_unit_shape=1</em>, <em>plot_event_signal=1</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoEpoch.plot_rasterplot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the PSTH (peri/post stimulus time histogram) for selected units. A gaussian kernel is used for
+estimating the instantaneous firing rate. Plot the figure if <code class="docutils literal notranslate"><span class="pre">save_fig</span></code> is True, in <code class="docutils literal notranslate"><span class="pre">fig_dirpath_raster</span></code></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>unit_pos</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int | array <a href="#id1"><span class="problematic" id="id2">|</span></a>list (default: all)</span></dt>
+<dd><p class="first last">Unit position.</p>
+</dd>
+<dt><strong>bin_duration</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float (default: 0.01 s)</span></dt>
+<dd><p class="first last">Bin duration when plotting the rasterplot</p>
+</dd>
+<dt><strong>sigma_gauss_kernel</strong> <span class="classifier-delimiter">:</span> <span class="classifier">quantity (default: 20*ms)</span></dt>
+<dd><p class="first last">Duration of the gaussian kernel used for estimating the instantaneous firing rate.
+See elephant.statistics.instantaneous_rate</p>
+</dd>
+<dt><strong>plot_unit_shape</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: True)</span></dt>
+<dd><p class="first last">If True, plot the shape of the selected units in the bottom-right corner</p>
+</dd>
+<dt><strong>plot_event_signal</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: True)</span></dt>
+<dd><p class="first last">If True, plot the mean of the events signals (i.e. mean over the different events)</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoEpoch.save">
+<code class="descname">save</code><span class="sig-paren">(</span><em>dirpath</em>, <em>filename=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoEpoch.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the instance as a pickle (.p) file
+The filename is appended with the currendt date and time</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>dirpath</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Directory path</p>
+</dd>
+<dt><strong>filename</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str | None</span></dt>
+<dd><p class="first last">Output filename. If none is ‘neoall_{currentdate}.p’</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoEpoch.subfun_plot_unit_shape">
+<code class="descname">subfun_plot_unit_shape</code><span class="sig-paren">(</span><em>unit_pos</em>, <em>plot_mean=0</em>, <em>ax=[]</em>, <em>raster_plot_call=0</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoEpoch.subfun_plot_unit_shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sub-routine for plotting shape of the unit</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>unit_pos</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Unit’s position</p>
+</dd>
+<dt><strong>plot_mean</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: False)</span></dt>
+<dd><p class="first last">If True, plot the mean of the unit’s shape over the 4 micro-wires of the tetrode</p>
+</dd>
+<dt><strong>ax</strong> <span class="classifier-delimiter">:</span> <span class="classifier">axis handle | None</span></dt>
+<dd><p class="first last">If provided, plot the figure on this axis</p>
+</dd>
+<dt><strong>raster_plot_call</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: False)</span></dt>
+<dd><p class="first last">Should be true, when this method is called from the <code class="docutils literal notranslate"><span class="pre">plot_rasterplot</span></code> method</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="neoStructures.NeoMother">
+<em class="property">class </em><code class="descclassname">neoStructures.</code><code class="descname">NeoMother</code><a class="headerlink" href="#neoStructures.NeoMother" title="Permalink to this definition">¶</a></dt>
+<dd><p>Superclass of NeoAll and NeoEpoch (both NeoAll and NeoEpoch inherits from NeoMother). Used to define methods
+for both NeoAll and NeoEpochs</p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#neoStructures.NeoMother.channelpos2elec" title="neoStructures.NeoMother.channelpos2elec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channelpos2elec</span></code></a>(channel_pos)</td>
+<td>From the channel (micro-wire) position, return the corresponding electrode’s number and name</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#neoStructures.NeoMother.channelpos2tetrode" title="neoStructures.NeoMother.channelpos2tetrode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channelpos2tetrode</span></code></a>(channel_pos)</td>
+<td>From the channel (micro-wire) position, return the information about the tetrode of this channel</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#neoStructures.NeoMother.elecnum2channelpos" title="neoStructures.NeoMother.elecnum2channelpos"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elecnum2channelpos</span></code></a>(elec_num)</td>
+<td>From the electrode’s number return the electrode’s channels position and name</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#neoStructures.NeoMother.getunitpreferredchannelname" title="neoStructures.NeoMother.getunitpreferredchannelname"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getunitpreferredchannelname</span></code></a>(unit_name)</td>
+<td>Get the preferred channel of a unit from the unit’s name</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#neoStructures.NeoMother.subfun_plot_unit_shape" title="neoStructures.NeoMother.subfun_plot_unit_shape"><code class="xref py py-obj docutils literal notranslate"><span class="pre">subfun_plot_unit_shape</span></code></a>(unit_pos[,&nbsp;…])</td>
+<td>Sub-routine for plotting shape of the unit</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="neoStructures.NeoMother.channelpos2elec">
+<code class="descname">channelpos2elec</code><span class="sig-paren">(</span><em>channel_pos</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoMother.channelpos2elec" title="Permalink to this definition">¶</a></dt>
+<dd><p>From the channel (micro-wire) position, return the corresponding electrode’s number and name</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>channel_pos</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Channel’s (micro-wire) position</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>el_num</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><blockquote class="first">
+<div><p>Corresponding electrode’s number</p>
+</div></blockquote>
+<dl class="last docutils">
+<dt>el_name <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Corresponding electrode’s name</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoMother.channelpos2tetrode">
+<code class="descname">channelpos2tetrode</code><span class="sig-paren">(</span><em>channel_pos</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoMother.channelpos2tetrode" title="Permalink to this definition">¶</a></dt>
+<dd><p>From the channel (micro-wire) position, return the information about the tetrode of this channel</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>channel_pos</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Channel’s (micro-wire) position</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>tetrode_num</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Corresponding tetrode number</p>
+</dd>
+<dt><strong>tetrode_channels_pos</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd><p class="first last">Position of the 4 channels of the tetrode</p>
+</dd>
+<dt><strong>wire_num_in_tetrode</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Position of the input channel in the tetrode (between 0 and 3)</p>
+</dd>
+<dt><strong>tetrode_channels_pos_glob</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd><p class="first last">??? same as tetrode_channels_pos ???</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoMother.elecnum2channelpos">
+<code class="descname">elecnum2channelpos</code><span class="sig-paren">(</span><em>elec_num</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoMother.elecnum2channelpos" title="Permalink to this definition">¶</a></dt>
+<dd><p>From the electrode’s number return the electrode’s channels position and name</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>elec_num</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Electrode position</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>channel_pos</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd><p class="first last">Position of the input electrode’s channels</p>
+</dd>
+<dt><strong>channel_names</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd><p class="first last">Name of the input electrode’s channels</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoMother.getunitpreferredchannelname">
+<code class="descname">getunitpreferredchannelname</code><span class="sig-paren">(</span><em>unit_name</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoMother.getunitpreferredchannelname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the preferred channel of a unit from the unit’s name</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>unit_name</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Name of the unit</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>channel_name</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Name of the preferred channel (micro-wire) of the input unit</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="neoStructures.NeoMother.subfun_plot_unit_shape">
+<code class="descname">subfun_plot_unit_shape</code><span class="sig-paren">(</span><em>unit_pos</em>, <em>plot_mean=0</em>, <em>ax=[]</em>, <em>raster_plot_call=0</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.NeoMother.subfun_plot_unit_shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sub-routine for plotting shape of the unit</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>unit_pos</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Unit’s position</p>
+</dd>
+<dt><strong>plot_mean</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: False)</span></dt>
+<dd><p class="first last">If True, plot the mean of the unit’s shape over the 4 micro-wires of the tetrode</p>
+</dd>
+<dt><strong>ax</strong> <span class="classifier-delimiter">:</span> <span class="classifier">axis handle | None</span></dt>
+<dd><p class="first last">If provided, plot the figure on this axis</p>
+</dd>
+<dt><strong>raster_plot_call</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool (default: False)</span></dt>
+<dd><p class="first last">Should be true, when this method is called from the <code class="docutils literal notranslate"><span class="pre">plot_rasterplot</span></code> method</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="neoStructures.realign_spike_trace">
+<code class="descclassname">neoStructures.</code><code class="descname">realign_spike_trace</code><span class="sig-paren">(</span><em>spike_trace</em>, <em>spike_trace_filtered=[]</em>, <em>resample_factor=5</em>, <em>interp_method='cubic'</em>, <em>half_extremum_win=5</em><span class="sig-paren">)</span><a class="headerlink" href="#neoStructures.realign_spike_trace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Re-align the spike trace so that the extremum in on the center of the window. The extremum position is computed
+on the filtered spike trace. Before taking the extremum, the filtered spike trace is upsampled and interpolated.
+The returned spike trace is the upsampled and interpolated trace, aligned on the center of the window.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>spike_trace</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd><p class="first last">Spike trace</p>
+</dd>
+<dt><strong>spike_trace_filtered</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array | none (default)</span></dt>
+<dd><p class="first last">Filtered spike trace. If empty is equal to <code class="docutils literal notranslate"><span class="pre">spike_trace</span></code></p>
+</dd>
+<dt><strong>resample_factor</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int (default</span></dt>
+<dd><p class="first last">Upsampling factor</p>
+</dd>
+<dt><strong>interp_method</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str (default</span></dt>
+<dd><p class="first last">Interpolation method used</p>
+</dd>
+<dt><strong>half_extremum_win</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">The extremum will be search only around the center of the window.
+In a sub-window around the center : [center-half_extremum_win, center+half_extremum_win]
+Spikes should already be more or less centered.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>spike_trace_realigned</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array</span></dt>
+<dd><p class="first last">Spike trace aligned and upsampled</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2017, Martin Deudon.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

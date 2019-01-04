@@ -1,0 +1,246 @@
+
+
+.. _sphx_glr_auto_examples_NeoAll_examples_plot_neoAll_ex2.py:
+
+
+===========================
+Neo All - example 2 - Cross-Correlograms
+===========================
+
+This example shows how to compute and plot cross-correlograms of spiketrains from different units.
+
+.. note:: The crosscorrelogram compares the output of 2 different neurons, it indicates the firing rate of one neuron
+          versus another. See `here <https://www.med.upenn.edu/mulab/crosscorrelation.html>`_ for more details
+
+.. image:: ./../../_static/images/crosscorrelogram.png
+
+
+
+
+First import neoStructures
+
+
+
+.. code-block:: python
+
+    from neoStructures import *
+    import matplotlib.pyplot as plt
+    from os.path import isdir, join
+
+
+
+
+
+
+
+Import the data and create the NeoAll instance
+
+
+
+.. code-block:: python
+
+    data_dir = join('pySpikeAnalysis', 'sample_data') if isdir('pySpikeAnalysis') else join('..', '..', 'pySpikeAnalysis', 'sample_data')
+    spykingcircus_dir = r'SpykingCircus_results'
+    probe_filename = r'000_AA.prb'
+    signal_dir = r'EDF'
+    results_filename = r'spykingcircusres'
+
+    neoAll = NeoAll(join(data_dir, spykingcircus_dir), results_filename, join(data_dir, probe_filename), save_fig=0)
+
+
+
+
+
+
+
+See information about NeoAll
+
+
+
+.. code-block:: python
+
+    print(neoAll)
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out::
+
+    NeoAll Instance with 54 units. 1 Neo segment per unit. Each segment contains 1 Neo spiketrain
+    10 channel indexes
+
+
+Use :func:`neoStructures.NeoAll.plot_crosscorrelogram` to plot cross-correlogram between 2 units. The spiketrains are first converted into binned
+spiketrains before the computation of the cross-correlogram.
+The package `Elephant <http://elephant.readthedocs.io/en/latest/index.html>`_ is used for the binning as well as for computing
+the cross-correlogram.
+Let's compute the cross-correlogram between the first 2 units :
+
+
+
+.. code-block:: python
+
+    neoAll.plot_crosscorrelogram(0, 1)
+
+
+
+
+.. image:: /auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_001.png
+    :align: center
+
+
+
+
+We can see from these cross-correlogram that the two units often fire together
+Bin duration is set by default to 1ms but can be modified. The max_lag_time parameter sets the time limits of the
+cross-correlogram, its default value is set to 80 ms
+It can be changed to zoom on the peak near the origin :
+
+
+
+.. code-block:: python
+
+    neoAll.plot_crosscorrelogram(0, 1, bin_time=1*ms, max_lag_time=25*ms)
+
+
+
+
+.. image:: /auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_002.png
+    :align: center
+
+
+
+
+Some statistics can be computed, be setting the do_stat parameter to 1 : n_surrogates spike-trains are created
+in which a jitter is added to the time of the spikes. The jitter is computed from a normal distribution whose standard
+deviation is fixed by the normal_dist_sd parameter. The 99% confidence interval computed from the jittered spiketrains
+is shown on top of the cross-correlogram.
+
+
+
+.. code-block:: python
+
+    neoAll.plot_crosscorrelogram(0, 1, do_stat=True, n_surrogates=100, normal_dist_sd=25*ms)
+
+
+
+
+.. image:: /auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_003.png
+    :align: center
+
+
+
+
+If unit_pos_a and unit_pos_b parameters are equals, the autocorrelogram is computed.
+
+
+
+.. code-block:: python
+
+    neoAll.plot_crosscorrelogram(0, 0)
+
+
+
+
+.. image:: /auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_004.png
+    :align: center
+
+
+
+
+Multiples cross-correlogram can be plot at the same time in multiple figures :
+
+
+
+.. code-block:: python
+
+    neoAll.plot_crosscorrelogram(0, [0, 1, 2])
+
+
+
+
+.. rst-class:: sphx-glr-horizontal
+
+
+    *
+
+      .. image:: /auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_005.png
+            :scale: 47
+
+    *
+
+      .. image:: /auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_006.png
+            :scale: 47
+
+    *
+
+      .. image:: /auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_007.png
+            :scale: 47
+
+
+
+
+Or in the same figure :
+
+
+
+.. code-block:: python
+
+    neoAll.plot_crosscorrelogram([0, 1, 2], [0, 1, 2], merge_plots=1)
+
+
+
+
+.. image:: /auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_008.png
+    :align: center
+
+
+
+
+If same_yscale is True, the cross-correlograms are smoothed and the same y-scale is used.
+
+
+
+.. code-block:: python
+
+    neoAll.plot_crosscorrelogram([0, 1, 2], [0, 1, 2], merge_plots=1, same_yscale=1, fill_under_plot=1)
+
+
+
+
+
+
+.. image:: /auto_examples/NeoAll_examples/images/sphx_glr_plot_neoAll_ex2_009.png
+    :align: center
+
+
+
+
+**Total running time of the script:** ( 0 minutes  16.418 seconds)
+
+
+
+.. only :: html
+
+ .. container:: sphx-glr-footer
+
+
+  .. container:: sphx-glr-download
+
+     :download:`Download Python source code: plot_neoAll_ex2.py <plot_neoAll_ex2.py>`
+
+
+
+  .. container:: sphx-glr-download
+
+     :download:`Download Jupyter notebook: plot_neoAll_ex2.ipynb <plot_neoAll_ex2.ipynb>`
+
+
+.. only:: html
+
+ .. rst-class:: sphx-glr-signature
+
+    `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.readthedocs.io>`_

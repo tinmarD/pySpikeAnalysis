@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Neo All - example 4 &#8212; Spike Analysis 0 documentation</title>
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/gallery.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/my-styles.css" type="text/css" />
+    <script type="text/javascript" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Neo All - example 3 - Density plot, unit template" href="plot_neoAll_ex3.html" />
+    <link rel="prev" title="Neo All - example 2 - Cross-Correlograms" href="plot_neoAll_ex2.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          Spike Analysis</a>
+        <span class="navbar-text navbar-version pull-left"><b>0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../../_rst/core_structures.html">Overview</a></li>
+                <li><a href="../../_rst/modules.html">API</a></li>
+                <li><a href="../index.html">Examples</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../_rst/modules.html">pySpikeAnalysis</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">General Examples</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html#neo-all-example">Neo All example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#neo-epoch-examples">Neo Epoch examples</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../../_sources/auto_examples/NeoAll_examples/plot_NeoAll_ex4.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">Neo All - example 4</a></li>
+</ul>
+
+  <li>
+    <a href="plot_neoAll_ex2.html" title="Previous Chapter: Neo All - example 2 - Cross-Correlograms"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Neo All - exa...</span>
+    </a>
+  </li>
+  <li>
+    <a href="plot_neoAll_ex3.html" title="Next Chapter: Neo All - example 3 - Density plot, unit template"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Neo All - exa... &raquo;</span>
+    </a>
+  </li>
+<div id="sourcelink">
+  <a href="../../_sources/auto_examples/NeoAll_examples/plot_NeoAll_ex4.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+<form action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="neo-all-example-4">
+<span id="sphx-glr-auto-examples-neoall-examples-plot-neoall-ex4-py"></span><h1>Neo All - example 4<a class="headerlink" href="#neo-all-example-4" title="Permalink to this headline">¶</a></h1>
+<p>In this example, we look at the single unit activity around interictal epileptic discharges (IEDs). To do this we will
+add events and define epochs to the NeoAll instance.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">neoStructures</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">os.path</span> <span class="kn">import</span> <span class="n">isdir</span><span class="p">,</span> <span class="n">join</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">_pickle</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">()</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_context</span><span class="p">(</span><span class="s1">&#39;paper&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In this example we will load the NeoAll instance from a pickle file</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data_dir</span> <span class="o">=</span> <span class="n">join</span><span class="p">(</span><span class="s1">&#39;pySpikeAnalysis&#39;</span><span class="p">,</span> <span class="s1">&#39;sample_data&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">isdir</span><span class="p">(</span><span class="s1">&#39;pySpikeAnalysis&#39;</span><span class="p">)</span> <span class="k">else</span> <span class="n">join</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">,</span> <span class="s1">&#39;..&#39;</span><span class="p">,</span> <span class="s1">&#39;pySpikeAnalysis&#39;</span><span class="p">,</span> <span class="s1">&#39;sample_data&#39;</span><span class="p">)</span>
+<span class="n">neo_all_filename</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;neoall_071118_1132.p&#39;</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span> <span class="n">neo_all_filename</span><span class="p">),</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">neoAll</span> <span class="o">=</span> <span class="n">_pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>See information about NeoAll :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">neoAll</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">NeoAll</span> <span class="n">Instance</span> <span class="k">with</span> <span class="mi">19</span> <span class="n">units</span><span class="o">.</span> <span class="mi">1</span> <span class="n">Neo</span> <span class="n">segment</span> <span class="n">per</span> <span class="n">unit</span><span class="o">.</span> <span class="n">Each</span> <span class="n">segment</span> <span class="n">contains</span> <span class="mi">1</span> <span class="n">Neo</span> <span class="n">spiketrain</span>
+<span class="mi">17</span> <span class="n">channel</span> <span class="n">indexes</span>
+<span class="mi">49</span> <span class="n">channels</span> <span class="ow">and</span> <span class="mi">49</span> <span class="n">electrodes</span>
+</pre></div>
+</div>
+<p>Before creating epochs, we first need to create events. They can represents stimuli onset or epileptic events for
+instance. In this example, each event correponds to an Interictal Epileptic Discharge. There are two ways to create
+events, either by providing the event_filepath parameter when instanciating a NeoAll instance or by calling the
+<a class="reference internal" href="../../_rst/neoStructures.html#neoStructures.NeoAll.read_event_file" title="neoStructures.NeoAll.read_event_file"><code class="xref py py-func docutils literal notranslate"><span class="pre">neoStructures.NeoAll.read_event_file()</span></code></a> method. The indexing of the csv file (i.e. to which field correspond each
+column) is done in the <strong>neoStructures_params.py</strong> file.
+Here we can see that the neoAll already contains events :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">neoAll</span><span class="o">.</span><span class="n">segments</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">events</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="o">&lt;</span><span class="n">Event</span><span class="p">:</span> <span class="o">&gt;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>We can access the times of the events and the name of the events :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s1">&#39;Event name : {}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">neoAll</span><span class="o">.</span><span class="n">segments</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">events</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Event times : {}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">neoAll</span><span class="o">.</span><span class="n">segments</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">events</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">times</span><span class="p">))</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Event</span> <span class="n">name</span> <span class="p">:</span> <span class="n">Pointe</span>
+<span class="n">Event</span> <span class="n">times</span> <span class="p">:</span> <span class="p">[</span> <span class="mf">127.59</span>    <span class="mf">132.4795</span>  <span class="mf">134.4737</span>  <span class="mf">149.087</span>   <span class="mf">230.2434</span>  <span class="mf">232.3191</span>  <span class="mf">270.5974</span>
+  <span class="mf">441.8186</span>  <span class="mf">501.2786</span>  <span class="mf">617.0066</span>  <span class="mf">753.7445</span>  <span class="mf">770.4778</span>  <span class="mf">816.693</span>   <span class="mf">974.7162</span>
+  <span class="mf">982.7807</span> <span class="mf">1157.6631</span> <span class="mf">1169.6899</span> <span class="mf">1226.8002</span> <span class="mf">1478.6519</span> <span class="mf">1597.9215</span> <span class="mf">1635.7244</span>
+ <span class="mf">1904.1508</span> <span class="mf">1912.3301</span> <span class="mf">1937.7698</span> <span class="mf">1963.7687</span> <span class="mf">1998.6647</span> <span class="mf">2029.0295</span> <span class="mf">2105.2268</span>
+ <span class="mf">2109.5313</span> <span class="mf">2136.0479</span> <span class="mf">2188.8211</span> <span class="mf">2296.0886</span> <span class="mf">2621.6179</span> <span class="mf">2900.5309</span> <span class="mf">3206.0556</span>
+ <span class="mf">3321.9253</span> <span class="mf">3387.3586</span> <span class="mf">3627.9234</span> <span class="mf">3790.2395</span> <span class="mf">3927.836</span>  <span class="mf">4266.9786</span> <span class="mf">4441.5314</span>
+ <span class="mf">4585.17</span>   <span class="mf">4827.7493</span> <span class="mf">5235.3367</span> <span class="mf">5362.5499</span> <span class="mf">5547.8424</span> <span class="mf">5567.3848</span> <span class="mf">5590.6934</span>
+ <span class="mf">5674.0067</span> <span class="mf">5791.6717</span><span class="p">]</span> <span class="n">s</span>
+</pre></div>
+</div>
+<p>Let’s now define epochs on each segments (NeoAll class contains one Neo.segment for each unit), using the
+<a class="reference internal" href="../../_rst/neoStructures.html#neoStructures.NeoAll.create_epochs_around_events" title="neoStructures.NeoAll.create_epochs_around_events"><code class="xref py py-func docutils literal notranslate"><span class="pre">neoStructures.NeoAll.create_epochs_around_events()</span></code></a>
+We have to specify the epoch onset and duration (s), as well as the epochs name.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">epoch_t_start</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">0.500</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.250</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.050</span><span class="p">,</span> <span class="mf">0.050</span><span class="p">,</span> <span class="mf">0.250</span><span class="p">])</span>
+<span class="n">epoch_duration</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.250</span><span class="p">,</span> <span class="mf">0.200</span><span class="p">,</span> <span class="mf">0.100</span><span class="p">,</span> <span class="mf">0.200</span><span class="p">,</span> <span class="mf">0.250</span><span class="p">])</span>
+<span class="n">epoch_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Pre-IED baseline&#39;</span><span class="p">,</span> <span class="s1">&#39;Pre-IED&#39;</span><span class="p">,</span> <span class="s1">&#39;IED&#39;</span><span class="p">,</span> <span class="s1">&#39;Slow wave&#39;</span><span class="p">,</span> <span class="s1">&#39;Post-IED&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>We must specify around which event we want to create epochs</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">neoAll</span><span class="o">.</span><span class="n">create_epochs_around_events</span><span class="p">(</span><span class="s1">&#39;Pointe&#39;</span><span class="p">,</span> <span class="n">time_offset</span><span class="o">=</span><span class="n">epoch_t_start</span><span class="p">,</span> <span class="n">epoch_duration</span><span class="o">=</span><span class="n">epoch_duration</span><span class="p">,</span>
+                                   <span class="n">epoch_names</span><span class="o">=</span><span class="n">epoch_names</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We can now study the behaviour of neurons on the different periods
+of the IEDs we have defined.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">neoAll</span><span class="o">.</span><span class="n">plot_spikerate_change_ratio_on_epochs</span><span class="p">(</span><span class="s1">&#39;IED&#39;</span><span class="p">,</span> <span class="s1">&#39;Pre-IED&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/sphx_glr_plot_NeoAll_ex4_001.png" class="align-center" src="../../_images/sphx_glr_plot_NeoAll_ex4_001.png" />
+<p>We can see that some units start firing during the IED and are almost silent before, in the Pre-IED period. Further
+analyses can be conducted using the NeoEpoch class which allows to plot rasterplot of the different units around
+the events of interest.</p>
+<p><strong>Total running time of the script:</strong> ( 0 minutes  0.780 seconds)</p>
+<div class="sphx-glr-footer docutils container">
+<div class="sphx-glr-download docutils container">
+<a class="reference download internal" href="../../_downloads/plot_NeoAll_ex4.py" download=""><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">plot_NeoAll_ex4.py</span></code></a></div>
+<div class="sphx-glr-download docutils container">
+<a class="reference download internal" href="../../_downloads/plot_NeoAll_ex4.ipynb" download=""><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">plot_NeoAll_ex4.ipynb</span></code></a></div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.readthedocs.io">Gallery generated by Sphinx-Gallery</a></p>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2017, Martin Deudon.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

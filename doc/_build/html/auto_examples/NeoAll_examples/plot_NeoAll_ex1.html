@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Neo All - example 1 &#8212; Spike Analysis 0 documentation</title>
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/gallery.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/my-styles.css" type="text/css" />
+    <script type="text/javascript" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Neo All - example 2 - Cross-Correlograms" href="plot_neoAll_ex2.html" />
+    <link rel="prev" title="Neo All - example 5 - Channel Groups (Index)" href="plot_NeoAll_ex5.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          Spike Analysis</a>
+        <span class="navbar-text navbar-version pull-left"><b>0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../../_rst/core_structures.html">Overview</a></li>
+                <li><a href="../../_rst/modules.html">API</a></li>
+                <li><a href="../index.html">Examples</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../_rst/modules.html">pySpikeAnalysis</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">General Examples</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html#neo-all-example">Neo All example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#neo-epoch-examples">Neo Epoch examples</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../../_sources/auto_examples/NeoAll_examples/plot_NeoAll_ex1.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">Neo All - example 1</a></li>
+</ul>
+
+  <li>
+    <a href="plot_NeoAll_ex5.html" title="Previous Chapter: Neo All - example 5 - Channel Groups (Index)"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Neo All - exa...</span>
+    </a>
+  </li>
+  <li>
+    <a href="plot_neoAll_ex2.html" title="Next Chapter: Neo All - example 2 - Cross-Correlograms"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Neo All - exa... &raquo;</span>
+    </a>
+  </li>
+<div id="sourcelink">
+  <a href="../../_sources/auto_examples/NeoAll_examples/plot_NeoAll_ex1.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+<form action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="neo-all-example-1">
+<span id="sphx-glr-auto-examples-neoall-examples-plot-neoall-ex1-py"></span><h1>Neo All - example 1<a class="headerlink" href="#neo-all-example-1" title="Permalink to this headline">¶</a></h1>
+<p>This example shows how to use create a NeoAll instance.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>NeoAll instances are created from the SpykingCircus files. See <a class="reference external" href="https://spyking-circus.readthedocs.io/en/latest/advanced/files.html">here</a>
+for details about these results files. NeoAll needs at least three arguments to be initiated :</p>
+<ul class="last simple">
+<li>spikesorting_dirpath : the path of the directory containng the spyking circus result file</li>
+<li>spikesorting_filename : the name of the Spiking Circus result file</li>
+<li>probe_filepath : the path to the Spiking Circus probe file</li>
+</ul>
+</div>
+<p>For instance, the Spyking Cirucs files may look like these :</p>
+<img alt="../../_images/spykingcircus_files.png" src="../../_images/spykingcircus_files.png" />
+<dl class="docutils">
+<dt>Details of the files :</dt>
+<dd><ul class="first last simple">
+<li>The <em>000_AA.prb</em> file is the probe file, it contains information about how contacts are organized on the electrodes, see <a class="reference external" href="https://spyking-circus.readthedocs.io/en/latest/code/probe.html">here</a> for more info. This file is needed for launching the spike-sorting. It is used in NeoAll for creating channel indexes and knowing the number of tetrodes.</li>
+<li>The <em>.result.hdf5</em> file is used to store the spike times for each unit, at the end of the spike sorting procedure.</li>
+<li>The <em>.template.hdf5</em> file contains the preffered contact of each unit.</li>
+<li>In order to generate the units template, three files are used : <em>.basis.hdf5</em>, <em>.templates.hdf5</em> and <em>.clusters.hdf5</em> files. Unit template is computed using the <a class="reference internal" href="../../_rst/spykingcircus_utils.html#spykingcircus_utils.get_templates_from_spykingcircus_file" title="spykingcircus_utils.get_templates_from_spykingcircus_file"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_templates_from_spykingcircus_file()</span></code></a> function.</li>
+</ul>
+</dd>
+</dl>
+<p>First import the neoStructures :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">neoStructures</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">os.path</span> <span class="kn">import</span> <span class="n">isdir</span><span class="p">,</span> <span class="n">join</span>
+</pre></div>
+</div>
+<p>Import the data and create the NeoAll instance</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data_dir</span> <span class="o">=</span> <span class="n">join</span><span class="p">(</span><span class="s1">&#39;pySpikeAnalysis&#39;</span><span class="p">,</span> <span class="s1">&#39;sample_data&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">isdir</span><span class="p">(</span><span class="s1">&#39;pySpikeAnalysis&#39;</span><span class="p">)</span> <span class="k">else</span> <span class="n">join</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">,</span> <span class="s1">&#39;..&#39;</span><span class="p">,</span> <span class="s1">&#39;pySpikeAnalysis&#39;</span><span class="p">,</span> <span class="s1">&#39;sample_data&#39;</span><span class="p">)</span>
+<span class="n">spykingcircus_dir</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;SpykingCircus_results&#39;</span>
+<span class="n">probe_filename</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;000_AA.prb&#39;</span>
+<span class="n">signal_dir</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;EDF&#39;</span>
+<span class="n">results_filename</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;spykingcircusres&#39;</span>
+
+<span class="n">neoAll</span> <span class="o">=</span> <span class="n">NeoAll</span><span class="p">(</span><span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span> <span class="n">spykingcircus_dir</span><span class="p">),</span> <span class="n">results_filename</span><span class="p">,</span> <span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span> <span class="n">probe_filename</span><span class="p">),</span> <span class="n">save_fig</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>See information about NeoAll</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">neoAll</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">NeoAll</span> <span class="n">Instance</span> <span class="k">with</span> <span class="mi">54</span> <span class="n">units</span><span class="o">.</span> <span class="mi">1</span> <span class="n">Neo</span> <span class="n">segment</span> <span class="n">per</span> <span class="n">unit</span><span class="o">.</span> <span class="n">Each</span> <span class="n">segment</span> <span class="n">contains</span> <span class="mi">1</span> <span class="n">Neo</span> <span class="n">spiketrain</span>
+<span class="mi">10</span> <span class="n">channel</span> <span class="n">indexes</span>
+</pre></div>
+</div>
+<p>neoAll contains a list of Neo Segments (1 segment per unit)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">neoAll</span><span class="o">.</span><span class="n">segments</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;neo.core.segment.Segment&#39;&gt;
+</pre></div>
+</div>
+<p>Computing the mean firing rate is easy, e.g. for unit 3:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mean_spkrate_3</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">neoAll</span><span class="o">.</span><span class="n">segments</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">spiketrains</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">/</span> <span class="p">(</span><span class="n">neoAll</span><span class="o">.</span><span class="n">segments</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">t_stop</span> <span class="o">-</span> <span class="n">neoAll</span><span class="o">.</span><span class="n">segments</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">t_start</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">mean_spkrate_3</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">2.410294521750985</span> <span class="mi">1</span><span class="o">/</span><span class="n">s</span>
+</pre></div>
+</div>
+<p>The method <a class="reference internal" href="../../_rst/neoStructures.html#neoStructures.NeoAll.plot_spikerate_evolution" title="neoStructures.NeoAll.plot_spikerate_evolution"><code class="xref py py-func docutils literal notranslate"><span class="pre">neoStructures.NeoAll.plot_spikerate_evolution()</span></code></a> can be used to visualize the firing-rate over time
+The firing rate is computed by kernel convolution. The kernel is gaussian and the standard deviation can be set using
+the sigma_gauss_kernel parameter.
+The package <a class="reference external" href="http://elephant.readthedocs.io/en/latest/index.html">Elephant</a> is used for the estimation.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">neoAll</span><span class="o">.</span><span class="n">plot_spikerate_evolution</span><span class="p">(</span><span class="n">unit_pos</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">sigma_gauss_kernel</span><span class="o">=</span><span class="mi">30</span><span class="o">*</span><span class="n">s</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/sphx_glr_plot_NeoAll_ex1_001.png" class="align-center" src="../../_images/sphx_glr_plot_NeoAll_ex1_001.png" />
+<p>The shape of each unit can be plotted using the plot_unit_shape method :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">neoAll</span><span class="o">.</span><span class="n">plot_unit_shape</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/sphx_glr_plot_NeoAll_ex1_002.png" class="align-center" src="../../_images/sphx_glr_plot_NeoAll_ex1_002.png" />
+<p>As well as the ISI (Inter-Spike Interval), e.g. for unit 22 :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">neoAll</span><span class="o">.</span><span class="n">plot_isi</span><span class="p">(</span><span class="n">unit_pos</span><span class="o">=</span><span class="mi">22</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/sphx_glr_plot_NeoAll_ex1_003.png" class="align-center" src="../../_images/sphx_glr_plot_NeoAll_ex1_003.png" />
+<p>Zoom on the x-origin and increase the number of bins for the histogram</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">neoAll</span><span class="o">.</span><span class="n">plot_isi</span><span class="p">(</span><span class="mi">22</span><span class="p">,</span> <span class="n">bin_duration_ms</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">tmax_ms</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/sphx_glr_plot_NeoAll_ex1_004.png" class="align-center" src="../../_images/sphx_glr_plot_NeoAll_ex1_004.png" />
+<p><strong>Total running time of the script:</strong> ( 0 minutes  1.025 seconds)</p>
+<div class="sphx-glr-footer docutils container">
+<div class="sphx-glr-download docutils container">
+<a class="reference download internal" href="../../_downloads/plot_NeoAll_ex1.py" download=""><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">plot_NeoAll_ex1.py</span></code></a></div>
+<div class="sphx-glr-download docutils container">
+<a class="reference download internal" href="../../_downloads/plot_NeoAll_ex1.ipynb" download=""><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">plot_NeoAll_ex1.ipynb</span></code></a></div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.readthedocs.io">Gallery generated by Sphinx-Gallery</a></p>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2017, Martin Deudon.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
