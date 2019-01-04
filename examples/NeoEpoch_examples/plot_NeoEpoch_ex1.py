@@ -10,7 +10,7 @@ This example shows how to use NeoEpoch
 from neoStructures import *
 import matplotlib.pyplot as plt
 from os.path import isdir, join
-import _pickle
+import pickle
 import seaborn as sns
 sns.set()
 sns.set_context('paper')
@@ -23,7 +23,7 @@ print(sys.version)
 data_dir = join('pySpikeAnalysis', 'sample_data') if isdir('pySpikeAnalysis') else join('..', '..', 'pySpikeAnalysis', 'sample_data')
 neo_epoch_filename = r'neoepoch_071118_1132.p'
 with open(join(data_dir, neo_epoch_filename), 'rb') as f:
-    neo_epoch = _pickle.load(f)
+    neo_epoch = pickle.load(f)
 
 neo_epoch.save_fig = 0
 

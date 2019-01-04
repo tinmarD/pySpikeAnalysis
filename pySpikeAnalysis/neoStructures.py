@@ -14,7 +14,7 @@ import re
 import pandas as pd
 from scipy.interpolate import interp1d
 from tqdm import *
-import _pickle
+import pickle
 import mne
 import elephant
 import seaborn as sns
@@ -1289,7 +1289,7 @@ class NeoAll(NeoMother):
         if not filename:
             filename = 'neoall_{}.p'.format(datetime.strftime(datetime.now(), '%d%m%y_%H%M'))
         with open(os.path.join(dirpath, filename), 'wb') as f:
-            _pickle.dump(self, f)
+            pickle.dump(self, f)
 
     def export_spike_file_time(self, artefact_free_periods_filepath, output_path, unit_pos=[], sep=';'):
         unit_pos = np.array(unit_pos)
@@ -1728,7 +1728,7 @@ class NeoEpoch(NeoMother):
             filename = 'neoepoch_{}.p'.format(
                 datetime.strftime(datetime.now(), '%d%m%y_%H%M'))
         with open(os.path.join(dirpath, filename), 'wb') as f:
-            _pickle.dump(self, f)
+            pickle.dump(self, f)
 
 
 if __name__ == '__main__':
