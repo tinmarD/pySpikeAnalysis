@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="414f1519-9ced-4db7-9a18-87a1fac69a47" name="Default" comment="" />
+    <list default="true" id="414f1519-9ced-4db7-9a18-87a1fac69a47" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pySpikeAnalysis/neoStructures.py" afterPath="$PROJECT_DIR$/pySpikeAnalysis/neoStructures.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,28 +18,28 @@
       <file leaf-file-name="neoStructures.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pySpikeAnalysis/neoStructures.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-755">
-              <caret line="1530" column="18" lean-forward="false" selection-start-line="1530" selection-start-column="18" selection-end-line="1530" selection-end-column="18" />
+            <state relative-caret-position="187">
+              <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spykingcircus_utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pySpikeAnalysis/spykingcircus_utils.py">
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+              <caret line="0" column="27" lean-forward="true" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -125,7 +128,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>300</find>
       <find>save</find>
       <find>dpi=</find>
       <find>RES_FIG_DPI</find>
@@ -155,6 +157,7 @@
       <find>df</find>
       <find>n_spikes_to_plot</find>
       <find>artefact</find>
+      <find>Number</find>
     </findStrings>
     <replaceStrings>
       <replace>grpPosPeriTuber</replace>
@@ -196,7 +199,6 @@
         <option value="$PROJECT_DIR$/examples/NeoAll_examples/plot_NeoAll_ex4.py" />
         <option value="$PROJECT_DIR$/pySpikeAnalysis/eeg_utils.py" />
         <option value="$PROJECT_DIR$/pySpikeAnalysis/spikeAnalysis_utils.py" />
-        <option value="$PROJECT_DIR$/pySpikeAnalysis/neoStructures.py" />
         <option value="$PROJECT_DIR$/scripts/mua_comparison.py" />
         <option value="$PROJECT_DIR$/examples/NeoAll_examples/plot_NeoAll_ex1.py" />
         <option value="$PROJECT_DIR$/examples/NeoAll_examples/plot_neoAll_ex2.py" />
@@ -205,6 +207,8 @@
         <option value="$PROJECT_DIR$/examples/NeoAll_examples/plot_NeoAll_ex5.py" />
         <option value="$PROJECT_DIR$/examples/NeoAll_examples/plot_neoAll_ex3.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/pySpikeAnalysis/neoStructures.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -546,6 +550,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1659" y="112" width="1539" height="1101" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18999323" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879376" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -657,13 +662,6 @@
     <entry file="file://$PROJECT_DIR$/plot_neoAll_ex2.py" />
     <entry file="file://$PROJECT_DIR$/examples/NeoAll_examples/plot_test_ex.py" />
     <entry file="file://$PROJECT_DIR$/environment.yml" />
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_main.py" />
     <entry file="file://$PROJECT_DIR$/neoStructures_params.py" />
     <entry file="file://$PROJECT_DIR$/spikeAnalysis_utils.py" />
@@ -779,14 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pySpikeAnalysis/neoStructures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-755">
-          <caret line="1530" column="18" lean-forward="false" selection-start-line="1530" selection-start-column="18" selection-end-line="1530" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pySpikeAnalysis/spykingcircus_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -856,7 +846,23 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+          <caret line="0" column="27" lean-forward="true" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pySpikeAnalysis/neoStructures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding />
         </state>
       </provider>

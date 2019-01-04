@@ -23,7 +23,7 @@ import neo_utils
 import eeg_utils
 import spikeAnalysis_utils
 from scipy import signal
-from numbers import Number
+# from numbers import Number
 from neoStructures_params import *
 
 
@@ -129,14 +129,17 @@ class NeoMother:
             Name of the preferred channel (micro-wire) of the input unit
 
         """
-        if isinstance(unit_name, Number):
-            unit_pos = unit_name
-        else:
+        if isinstance(unit_name, str):
             if unit_name not in self.unit_names:
                 print('No unit names {}'.format(unit_name))
                 return
             else:
                 unit_pos = self.unit_names.index(unit_name)
+        else:
+            try:
+                unit_pos = int(unit_name)
+            except:
+                raise ValueError('Wrong argument unit_name : {}'.format(unit_name))
         pref_chan_pos = self.unit_preferred_chan[unit_pos]
         return self.channel_names[pref_chan_pos]
 
@@ -511,9 +514,9 @@ class NeoAll(NeoMother):
             event_times = seg.events[int(event_pos)].times
             for i_epoch in range(0, n_epochs):
                 time_offset_i = time_offset[i_epoch]
-                time_offset_i = time_offset_i*s if isinstance(time_offset_i, Number) else time_offset_i
+                # time_offset_i = time_offset_i*s if isinstance(time_offset_i, Number) else time_offset_i
                 epoch_duration_i = epoch_duration[i_epoch]
-                epoch_duration_i = epoch_duration_i*s if isinstance(epoch_duration_i, Number) else epoch_duration_i
+                # epoch_duration_i = epoch_duration_i*s if isinstance(epoch_duration_i, Number) else epoch_duration_i
                 epoch_i = neo.Epoch(times=event_times + time_offset_i, durations=epoch_duration_i,
                                     name=epoch_names[i_epoch])
                 self.segments[i_seg].epochs.append(epoch_i)
@@ -583,7 +586,8 @@ class NeoAll(NeoMother):
             sigma_gauss_kernel = sigma_gauss_kernel*s
         smoothing_kernel = elephant.kernels.GaussianKernel(sigma=sigma_gauss_kernel)
         channel_index_names = [channel_index.name for channel_index in self.channel_indexes]
-        if np.isscalar(grp_index) and isinstance(grp_index, Number):
+        # if np.isscalar(grp_index) and isinstance(grp_index, Number):
+        if np.isscalar(grp_index):
             grp_index = np.array([int(grp_index)])
         elif np.isscalar(grp_index) and isinstance(grp_index, str):
             if grp_index not in channel_index_names:
