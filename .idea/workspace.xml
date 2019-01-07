@@ -14,11 +14,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="neoStructures.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="neoStructures.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pySpikeAnalysis/neoStructures.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="1728" column="24" lean-forward="true" selection-start-line="1728" selection-start-column="24" selection-end-line="1728" selection-end-column="24" />
+            <state relative-caret-position="1639">
+              <caret line="1716" column="0" lean-forward="true" selection-start-line="1716" selection-start-column="0" selection-end-line="1716" selection-end-column="0" />
               <folding>
                 <element signature="e#24#55#0" expanded="true" />
               </folding>
@@ -39,7 +39,7 @@
       <file leaf-file-name="create_neo_epoch.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/NeoEpoch_examples/create_neo_epoch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
+            <state relative-caret-position="720">
               <caret line="47" column="6" lean-forward="false" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
               <folding>
                 <element signature="e#114#156#0" expanded="true" />
@@ -60,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plot_NeoEpoch_ex1.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="plot_NeoEpoch_ex1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/examples/NeoEpoch_examples/plot_NeoEpoch_ex1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="567">
+              <caret line="46" column="28" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="46" selection-end-column="28" />
               <folding>
                 <element signature="e#130#157#0" expanded="true" />
               </folding>
@@ -819,19 +819,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/NeoEpoch_examples/plot_NeoEpoch_ex1.py">
+    <entry file="file://$PROJECT_DIR$/pySpikeAnalysis/neoStructures.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="1639">
+          <caret line="1716" column="0" lean-forward="true" selection-start-line="1716" selection-start-column="0" selection-end-line="1716" selection-end-column="0" />
           <folding>
-            <element signature="e#130#157#0" expanded="true" />
+            <element signature="e#24#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/NeoEpoch_examples/create_neo_epoch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
+        <state relative-caret-position="720">
           <caret line="47" column="6" lean-forward="false" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
           <folding>
             <element signature="e#114#156#0" expanded="true" />
@@ -839,12 +839,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pySpikeAnalysis/neoStructures.py">
+    <entry file="file://$PROJECT_DIR$/examples/NeoEpoch_examples/plot_NeoEpoch_ex1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="1728" column="24" lean-forward="true" selection-start-line="1728" selection-start-column="24" selection-end-line="1728" selection-end-column="24" />
+        <state relative-caret-position="567">
+          <caret line="46" column="28" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="46" selection-end-column="28" />
           <folding>
-            <element signature="e#24#55#0" expanded="true" />
+            <element signature="e#130#157#0" expanded="true" />
           </folding>
         </state>
       </provider>
