@@ -26,7 +26,10 @@ neo_epoch_filename = r'neoepoch_070119_1117.p'
 if not isfile(join(data_dir, neo_epoch_filename)):
     raise ValueError('Cannot find the file {}'.format(join(data_dir, neo_epoch_filename)))
 with open(join(data_dir, neo_epoch_filename), 'rb') as f:
-    neo_epoch = pickle.load(f)
+    try:
+        neo_epoch = pickle.load(f)
+    except:
+        raise Exception('Cannot pickle the file {}'.format(join(data_dir, neo_epoch_filename)))
 
 neo_epoch.save_fig = 0
 
