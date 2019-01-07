@@ -4,7 +4,7 @@ scipy
 matplotlib
 seaborn
 h5py
-neo
+neo==0.6.1
 mne
 elephant
 tqdm
