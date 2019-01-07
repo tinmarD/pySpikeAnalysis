@@ -6,7 +6,7 @@ Author: Martin Deudon
 
 ## Documentation
 
-The doc is here : https://pyspikeanalysis.readthedocs.io/en/latest/_rst/modules.html
+The doc is here : https://pyspikeanalysis.readthedocs.io/en/latest/
 
 
 ## Installation
