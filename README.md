@@ -4,7 +4,12 @@ Analyse micro-electrodes recordings with tetrode configuration
 
 Author: Martin Deudon
 
-# Installation
+## Documentation
+
+The doc is here : https://pyspikeanalysis.readthedocs.io/en/latest/_rst/modules.html
+
+
+## Installation
 1. First download pySpikeAnalysis, with the download link or with git : 
 `git clone https://github.com/tinmarD/pySpikeAnalysis`
 
