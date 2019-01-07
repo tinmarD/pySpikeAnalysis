@@ -10,13 +10,10 @@ This example shows how to use NeoEpoch
 from neoStructures import *
 import matplotlib.pyplot as plt
 from os.path import isdir, join, isfile
-import pickle
+import _pickle
 import seaborn as sns
 sns.set()
 sns.set_context('paper')
-
-import sys
-print(sys.version)
 
 #######################
 # Load neoEpoch data with _pickle
@@ -27,7 +24,7 @@ if not isfile(join(data_dir, neo_epoch_filename)):
     raise ValueError('Cannot find the file {}'.format(join(data_dir, neo_epoch_filename)))
 with open(join(data_dir, neo_epoch_filename), 'rb') as f:
     try:
-        neo_epoch = pickle.load(f)
+        neo_epoch = _pickle.load(f)
     except:
         raise Exception('Cannot pickle the file {}'.format(join(data_dir, neo_epoch_filename)))
 
