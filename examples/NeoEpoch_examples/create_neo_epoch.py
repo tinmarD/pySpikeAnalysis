@@ -13,12 +13,12 @@ import numpy as np
 ###############################################
 # Replace the next variables with your paths
 
-spykingcircus_dirpath = r'C:\Users\deudon\Desktop\SpikeSorting\_Data\002RM_day4_pointes\002RM_day4_pointes\spykingcircus_results'
+spykingcircus_dirpath = r'C:\Users\deudon\Desktop\SpikeSorting\_Data\002RM_day4_pointes\spykingcircus_results'
 results_filename = r'20150325-103311-001_0'
-event_filepath = r'C:\Users\deudon\Desktop\SpikeSorting\_Data\002RM_day4_pointes\002RM_day4_pointes\Events\eventFile.csv'
-signal_dirpath = r'C:\Users\deudon\Desktop\SpikeSorting\_Data\002RM_day4_pointes\002RM_day4_pointes\signal\monopolaire_5kHz_d4_post_crise'
-probe_filepath = r'C:\Users\deudon\Desktop\SpikeSorting\_Data\002RM_day4_pointes\002RM_day4_pointes\spykingcircus_paramfiles\002_RM.prb'
-figure_dirpath = r'C:\Users\deudon\Desktop\SpikeSorting\_Data\002RM_day4_pointes\002RM_day4_pointes\fig'
+event_filepath = r'C:\Users\deudon\Desktop\SpikeSorting\_Data\002RM_day4_pointes\Events\eventFile_part.csv'
+signal_dirpath = r'C:\Users\deudon\Desktop\SpikeSorting\_Data\002RM_day4_pointes\signal\monopolaire_5kHz_d4_post_crise'
+probe_filepath = r'C:\Users\deudon\Desktop\SpikeSorting\_Data\002RM_day4_pointes\spykingcircus_paramfiles\002_RM.prb'
+figure_dirpath = r'C:\Users\deudon\Desktop\SpikeSorting\_Data\002RM_day4_pointes\fig'
 artefact_csv_filepath = r'C:\Users\deudon\Desktop\SpikeSorting\_Data\002RM\Artefact_EDF_reconstruction_d1.csv'
 
 #####################
@@ -33,16 +33,16 @@ epoch_names = ['Pre-IED baseline', 'Pre-IED', 'IED', 'Slow wave', 'Post-IED']
 #################################
 # First create a NeoAll instance
 
-# neo_all = NeoAll(spykingcircus_dirpath, results_filename, probe_filepath, signal_dirpath=signal_dirpath,
-#                 event_filepath=event_filepath, fig_dirpath=figure_dirpath, save_fig=1)
+neo_all = NeoAll(spykingcircus_dirpath, results_filename, probe_filepath, signal_dirpath=signal_dirpath,
+                event_filepath=event_filepath, fig_dirpath=figure_dirpath, save_fig=1)
 
 ##################################
 # And create the NeoEpoch instance
 
-# neo_epoch = NeoEpoch(neo_all, event_filepath=event_filepath, time_pre=0.3, time_post=0.3)
-# print(neo_epoch)
+neo_epoch = NeoEpoch(neo_all, event_filepath=event_filepath, time_pre=0.2, time_post=0.2)
+print(neo_epoch)
 
 #######################################
 # You can save it with the save method :
 
-# neo_epoch.save(r'C:\Users\deudon\Desktop\SpikeSorting\_Scripts\_Python\pySpikeAnalysis\pySpikeAnalysis\sample_data')
+neo_epoch.save(r'C:\Users\deudon\Desktop\SpikeSorting\_Scripts\_Python\pySpikeAnalysis\pySpikeAnalysis\sample_data')

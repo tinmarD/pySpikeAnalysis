@@ -22,7 +22,7 @@ print(sys.version)
 # Load neoEpoch data with _pickle
 data_dir = join('pySpikeAnalysis', 'sample_data') if isdir('pySpikeAnalysis') else join('..', '..', 'pySpikeAnalysis', 'sample_data')
 print(data_dir)
-neo_epoch_filename = r'neoepoch_071118_1132.p'
+neo_epoch_filename = r'neoepoch_070119_1117.p'
 if not isfile(join(data_dir, neo_epoch_filename)):
     raise ValueError('Cannot find the file {}'.format(join(data_dir, neo_epoch_filename)))
 with open(join(data_dir, neo_epoch_filename), 'rb') as f:

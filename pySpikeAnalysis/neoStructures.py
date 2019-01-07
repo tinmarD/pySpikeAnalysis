@@ -268,6 +268,8 @@ class NeoAll(NeoMother):
         if save_fig:
             if not fig_dirpath:
                 fig_dirpath = '.'
+            if not os.path.isdir(fig_dirpath):
+                os.mkdir(fig_dirpath)
             self.fig_dirpath = spikeAnalysis_utils.createuniquedir(os.path.join(fig_dirpath, spikesorting_filename))
             self.fig_dirpath_srev = spikeAnalysis_utils.createuniquedir(os.path.join(self.fig_dirpath, 'SpikeRateEvolution'))
             self.fig_dirpath_raster = spikeAnalysis_utils.createuniquedir(os.path.join(self.fig_dirpath, 'RasterPlots'))
