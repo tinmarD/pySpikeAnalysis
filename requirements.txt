@@ -6,7 +6,7 @@ seaborn
 h5py
 neo==0.6.1
 mne
-elephant
+elephant==0.4.1
 tqdm
 sphinx_bootstrap_theme
 numpydoc
